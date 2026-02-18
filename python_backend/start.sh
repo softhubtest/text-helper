@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e # Hata olursa dur
 
 # Modelin varligini kontrol et (Runtime Download)
 echo "Model kontrol ediliyor..."

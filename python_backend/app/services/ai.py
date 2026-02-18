@@ -135,22 +135,136 @@ class TransformerPredictor:
             return self._fallback_predictions(text, max_suggestions)
     
     def _fallback_predictions(self, text: str, max_suggestions: int) -> List[Suggestion]:
-        """Fallback: Basit kurallar"""
+        """Fallback: Kapsamli Turkce kelime onerileri (Model olmadan yuksek kalite)"""
         suggestions = []
         words = text.split()
         last_word = words[-1].lower() if words else text.lower()
         
-        # Türkçe pattern'ler
+        # Kapsamli Turkce musteri hizmetleri pattern'leri
         patterns = {
-            'man': ['mantık', 'mantıklı', 'mantıksız', 'mantıken', 'mantıksal'],
-            'nas': ['nasıl', 'nasıl yardımcı', 'nasıl olabilirim', 'nasıl yapabilirim'],
-            'mer': ['merhaba', 'merhaba size', 'merhaba nasıl', 'merhaba hoş'],
-            'teş': ['teşekkür', 'teşekkürler', 'teşekkür ederim', 'teşekkür ederiz'],
-            'yar': ['yardım', 'yardımcı', 'yardımcı olabilirim', 'yardım etmek'],
-            'müs': ['müşteri', 'müşteri hizmetleri', 'müşteri desteği', 'müşteri memnuniyeti'],
-            'sip': ['sipariş', 'siparişiniz', 'sipariş takibi', 'sipariş durumu'],
-            'ara': ['ara', 'araba', 'arama', 'aramak', 'arayabilirsiniz'],
-            'aç': ['açık', 'açmak', 'açıklama', 'açıklamak', 'açıklayabilirim'],
+            # A
+            'aca': ['acaba', 'acaba nasıl', 'acaba ne zaman'],
+            'aç': ['açık', 'açıklama', 'açıklamak istiyorum', 'açıkça belirtmek isterim'],
+            'aci': ['acil', 'acil yardım', 'acil durum', 'acil olarak'],
+            'ale': ['alerji', 'alerjik', 'alerji durumunda'],
+            'ali': ['alındı', 'alındı bildirimi', 'alınmadı'],
+            'alt': ['alternatif', 'alternatif çözüm', 'alternatif ürün'],
+            'ana': ['anlaşılması', 'anladım', 'anlamıyorum', 'anlatabilir misiniz'],
+            'ara': ['arama', 'arayabilirsiniz', 'aramak istiyorum', 'aranacak'],
+            'asıl': ['asıl sorun', 'asıl mesele', 'asıl konu'],
+            'ası': ['asıl mesele', 'asistan', 'asistanınız'],
+
+            # B
+            'bağ': ['bağlantı', 'bağlantı sorunu', 'bağlantı hatası', 'bağlantı kurulamıyor'],
+            'bak': ['bakım', 'bakım hizmeti', 'bakmak istiyorum'],
+            'bay': ['bayiler', 'bayiiniz', 'bayi noktaları'],
+            'bek': ['bekliyorum', 'bekleme süresi', 'beklemek istemiyorum'],
+            'bil': ['bilgi', 'bilgi almak istiyorum', 'bilgilendirme', 'bilmiyorum'],
+            'bir': ['birkaç gün', 'birkaç saat', 'birkaç dakika', 'bir sorun yaşadım'],
+            'böy': ['böyle bir durum', 'böyle olmamalı', 'böyle devam edemez'],
+            'bun': ['bundan sonra', 'bunun için', 'bununla ilgili', 'bunun çözümü'],
+
+            # C-Ç
+            'can': ['canlı destek', 'canlı yardım', 'canlı görüşme'],
+            'çal': ['çalışmıyor', 'çalışmıyor sistemde', 'çalışmayan ürün'],
+            'çöz': ['çözüm', 'çözüm öneriniz', 'çözüm bekliyorum', 'çözülmedi'],
+
+            # D
+            'dan': ['danışmak istiyorum', 'danışma hattı'],
+            'dep': ['depozito', 'depo', 'depolama'],
+            'des': ['destek', 'destek almak istiyorum', 'destek hattı', 'destek ekibi'],
+            'det': ['detaylı bilgi', 'detayları öğrenmek istiyorum'],
+            'diy': ['diyorum ki', 'diyelim ki'],
+            'dur': ['durum', 'durum sorgulama', 'durumum nedir'],
+
+            # E
+            'eks': ['eksik', 'eksik ürün', 'eksik parça', 'eksiklik var'],
+            'ele': ['elektronik fatura', 'elektronik bildirim'],
+            'ert': ['ertelendi', 'erteleme istiyorum'],
+            'eso': ['esorgu', 'eş zamanlı'],
+
+            # F
+            'fat': ['fatura', 'fatura sorunu', 'fatura itirazı', 'fatura iptali'],
+            'fiy': ['fiyat', 'fiyat bilgisi', 'fiyat listesi', 'fiyat farkı'],
+
+            # G
+            'gar': ['garanti', 'garanti kapsamı', 'garanti süresi', 'garanti belgesi'],
+            'gec': ['gecikmeli', 'gecikme', 'gecikme nedeni', 'gecikme sorunu'],
+            'gel': ['gelecek', 'gelecek mi', 'geliş tarihi', 'gelebilir misiniz'],
+            'ger': ['gereken', 'gerekli belgeler', 'gereksinim', 'geri ödeme'],
+            'gönd': ['gönderim', 'gönderildi', 'gönderim tarihi', 'gönderim takibi'],
+            'gör': ['görüşmek istiyorum', 'görüşme talebi', 'görüştüm'],
+            'güz': ['güzel', 'güzellik', 'güzel hizmet aldım'],
+
+            # H
+            'has': ['hasarlı', 'hasar', 'hasar tespiti', 'hasar bildirimi'],
+            'hes': ['hesap', 'hesap bilgileri', 'hesabım kapalı', 'hesap açma'],
+            'hız': ['hızlı', 'hızlı çözüm', 'hızlı dönüş'],
+            'hiz': ['hizmet', 'hizmet kalitesi', 'hizmet bedeli', 'hizmet talebi'],
+
+            # İ
+            'iade': ['iade', 'iade talebi', 'iade ettim', 'iade süreci', 'iade edilmedi'],
+            'ipa': ['iptal', 'iptal talebi', 'iptal ettim', 'iptal süreci'],
+            'ist': ['istiyorum', 'istek', 'isteğim var', 'isteğimi iletmek istiyorum'],
+            'iyi': ['iyiyim teşekkürler', 'iyi günler', 'iyi akşamlar'],
+
+            # K
+            'kal': ['kaldırma', 'kalite', 'kalite sorunu', 'kalitesiz ürün'],
+            'kar': ['kargo', 'kargo takibi', 'kargo hasarı', 'kargo kayıp'],
+            'kat': ['katılım', 'katılmak istiyorum'],
+            'kay': ['kayıp', 'kayıt', 'kayıt numarası', 'kayıt olmak istiyorum'],
+            'kod': ['kod', 'kod numarası', 'promosyon kodu'],
+            'kon': ['konu', 'konuşmak istiyorum', 'konuyla ilgili'],
+            'kul': ['kullanıcı', 'kullanım kılavuzu', 'kullanım sorunu', 'kullanıcı adı'],
+
+            # M
+            'man': ['mantık', 'mantıklı değil', 'manzara'],
+            'mer': ['merhaba', 'merhaba, nasıl yardımcı olabilirim', 'merhaba, teşekkürler'],
+            'müş': ['müşteri', 'müşteri hizmetleri', 'müşteri desteği', 'müşteri memnuniyeti', 'müşteri numarası'],
+
+            # N
+            'nas': ['nasıl', 'nasıl yardımcı olabilirim', 'nasıl bir sorun var'],
+            'nere': ['nerede', 'nereye başvurabilirim', 'nereden alabilirim'],
+            'num': ['numara', 'numaram nedir', 'numara değişikliği'],
+
+            # O
+            'ode': ['ödeme', 'ödeme yaptım', 'ödeme sorunu', 'ödeme onayı', 'ödeme iadesi'],
+            'ola': ['olabilir mi', 'olası', 'olabildiğince hızlı'],
+            'onay': ['onay', 'onaylandı mı', 'onay bekliyorum'],
+
+            # P
+            'par': ['parça', 'para iadesi', 'parça değişimi'],
+            'pas': ['pasif', 'pasif hesap', 'pasoligim'],
+            'pro': ['promosyon', 'promo kodu', 'problem'],
+
+            # S
+            'sağ': ['sağ olun', 'sağlık', 'sağ olun teşekkürler'],
+            'ser': ['servis', 'servis talebi', 'servis noktası'],
+            'sip': ['sipariş', 'siparişim', 'sipariş takibi', 'sipariş iptal', 'sipariş onayı'],
+            'sor': ['sorun', 'sorunum var', 'sorunum çözülmedi', 'sorunu bildirmek istiyorum'],
+            'şik': ['şikayet', 'şikayet etmek istiyorum', 'şikayetim var'],
+
+            # T
+            'tak': ['takip', 'takip numarası', 'takibini yapabilir miyim'],
+            'tal': ['talep', 'talep açmak istiyorum', 'talebim var'],
+            'tar': ['tarih', 'tarih değişikliği', 'tarifeler'],
+            'tek': ['teknik destek', 'teknik sorun', 'tekrar', 'tekrar deniyorum'],
+            'tel': ['telefon', 'telefon numarası', 'telefonda görüşebilir miyim'],
+            'tes': ['teslimat', 'teslimat süresi', 'teslim alındı', 'teslim edilmedi'],
+            'teş': ['teşekkür', 'teşekkürler', 'teşekkür ederim', 'teşekkür ederiz', 'teşekkürler iyi günler'],
+
+            # U-Ü
+            'ücr': ['ücretsiz', 'ücret iadesi', 'ücret bilgisi'],
+            'ürü': ['ürün', 'ürün iadesi', 'ürün değişimi', 'ürün hasarlı', 'ürün bilgisi'],
+
+            # Y
+            'yar': ['yardım', 'yardımcı', 'yardımcı olabilir misiniz', 'yardım almak istiyorum'],
+            'yer': ['yerine', 'yerinde inceleme', 'yetkili servis'],
+            'yönet': ['yönetici', 'yöneticiye bağlar mısınız'],
+            'yük': ['yükleme', 'yükleme sorunu'],
+
+            # Z
+            'zan': ['zannediyorum', 'zannetmiyorum'],
         }
         
         prefix = last_word[:3] if len(last_word) >= 3 else last_word
