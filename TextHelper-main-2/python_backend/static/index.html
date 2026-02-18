@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextHelper ULTIMATE - Hybrid System</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .status-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            margin-left: 8px;
+        }
+
+        .status-transformer {
+            background: #10b981;
+            color: white;
+        }
+
+        .status-elasticsearch {
+            background: #3b82f6;
+            color: white;
+        }
+
+        .suggestion-source {
+            font-size: 0.7rem;
+            color: #666;
+            margin-left: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-robot"></i>
+                    <span>TextHelper ULTIMATE</span>
+                </div>
+                <div style="font-size: 0.75rem; color: #888; margin-top: 8px;">
+                    Hybrid: Transformer + Elasticsearch
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <h3>Sohbetler</h3>
+                    <ul class="chat-list" id="chatList">
+                        <li class="chat-item active" data-chat="1">
+                            <div class="chat-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="chat-info">
+                                <span class="chat-name">Müşteri Destek</span>
+                                <span class="chat-preview">Hybrid sistem aktif...</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="sidebar-footer">
+                <button class="new-chat-btn" id="newChatBtn">
+                    <i class="fas fa-plus"></i>
+                    <span>Yeni Sohbet</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-main">
+            <!-- Chat Header -->
+            <header class="chat-header">
+                <div class="chat-header-info">
+                    <div class="header-avatar">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="header-details">
+                        <h2>TextHelper ULTIMATE</h2>
+                        <span class="status online" id="connectionStatus">
+                            <i class="fas fa-circle"></i>
+                            Bağlanıyor...
+                        </span>
+                    </div>
+                </div>
+                <div class="chat-header-actions">
+                    <button class="header-btn" id="settingsBtn" title="Ayarlar">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Messages Container -->
+            <div class="messages-container" id="messagesContainer">
+                <div class="messages-wrapper" id="messagesWrapper">
+                    <!-- Welcome Message -->
+                    <div class="welcome-message">
+                        <div class="welcome-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>TextHelper ULTIMATE'a Hoş Geldiniz!</h3>
+                        <p>Hybrid sistem: AI + Hızlı Arama</p>
+                        <div class="tips">
+                            <div class="tip">
+                                <i class="fas fa-brain"></i>
+                                <span><strong>AI Tahminleri</strong> - Transformer modeli ile akıllı öneriler</span>
+                            </div>
+                            <div class="tip">
+                                <i class="fas fa-search"></i>
+                                <span><strong>Hızlı Arama</strong> - Elasticsearch ile milyonlarca kelime</span>
+                            </div>
+                            <div class="tip">
+                                <i class="fas fa-bolt"></i>
+                                <span><strong>Hybrid</strong> - Her ikisini birleştirir, en iyi sonuçlar</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <div class="input-container">
+                    <div class="input-wrapper">
+                        <textarea id="messageInput" class="message-input"
+                            placeholder="Mesajınızı yazın... (Hybrid sistem aktif)" rows="1" autocomplete="off"
+                            spellcheck="false"></textarea>
+
+                        <!-- Autocomplete Dropdown -->
+                        <div class="autocomplete-dropdown" id="autocompleteDropdown">
+                            <div class="dropdown-header">
+                                <span class="dropdown-title">ÖNERİLER (Hybrid)</span>
+                                <span class="dropdown-hint">Tab ile seç</span>
+                            </div>
+                            <ul class="suggestions-list" id="suggestionsList">
+                                <!-- Suggestions will be injected here -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="input-actions">
+                        <button class="send-btn" id="sendBtn" title="Gönder (Enter)">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="input-footer">
+                    <span class="typing-indicator" id="typingIndicator">
+                        <i class="fas fa-keyboard"></i>
+                        Yazmaya devam edin...
+                    </span>
+                    <span class="char-count" id="charCount">0 / 2000</span>
+                    <span id="processingTime" style="margin-left: 10px; font-size: 0.75rem; color: #888;"></span>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/frontend_ultimate.js?v=3"></script>
+    <script>
+        // TextHelper ULTIMATE'ı başlat
+        let textHelper = null;
+        let connectionStatus = document.getElementById('connectionStatus');
+
+        // Backend URL'i ayarla
+        // Backend URL'i ayarla (Otomatik Tespiti)
+        const protocol = window.location.protocol === 'https:' ? 'https:' : 'http:';
+        const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+
+        // Eger localhost ise port 8080, degilse (Render vb.) root domain
+        const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+        const API_URL = isLocal ? 'http://localhost:8080' : `${protocol}//${window.location.host}`;
+        const WS_URL = isLocal ? 'ws://localhost:8080/api/v1/ws' : `${wsProtocol}//${window.location.host}/api/v1/ws`;
+
+        // Başlat
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('🚀 TextHelper ULTIMATE başlatılıyor...');
+
+            // TextHelper'ı başlat
+            textHelper = initTextHelperUltimate({
+                apiUrl: API_URL,
+                wsUrl: WS_URL,
+                maxSuggestions: 50,  // Artırıldı: 7 -> 50
+                useWebSocket: true
+            });
+
+            // Input'a bağla
+            const input = document.getElementById('messageInput');
+            const suggestions = document.getElementById('autocompleteDropdown');
+
+            textHelper.attach(input, suggestions);
+
+            // Bağlantı durumunu kontrol et
+            checkConnection();
+
+            // Send button
+            document.getElementById('sendBtn').addEventListener('click', sendMessage);
+
+            // Enter key
+            input.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    sendMessage();
+                }
+            });
+
+            // Character count
+            // WHATSAPP BENZERİ: Her karakter için anlık öneri (input event - her karakter değişikliğinde)
+            input.addEventListener('input', () => {
+                const length = input.value.length;
+                document.getElementById('charCount').textContent = `${length} / 2000`;
+            });
+        });
+
+        // Bağlantı kontrolü
+        async function checkConnection() {
+            try {
+                const response = await fetch(`${API_URL}/api/v1/health`);
+                const data = await response.json();
+
+                connectionStatus.innerHTML = `
+                    <i class="fas fa-circle" style="color: #10b981;"></i>
+                    Bağlı
+                    ${data.transformer_loaded ? '<span class="status-badge status-transformer">AI</span>' : ''}
+                    ${data.elasticsearch_available ? '<span class="status-badge status-elasticsearch">ES</span>' : '<span class="status-badge status-elasticsearch">Local</span>'}
+                `;
+            } catch (error) {
+                connectionStatus.innerHTML = `
+                    <i class="fas fa-circle" style="color: #ef4444;"></i>
+                    Bağlantı Hatası
+                `;
+                console.error('Backend bağlantı hatası:', error);
+            }
+        }
+
+        // Mesaj gönder
+        function sendMessage() {
+            const input = document.getElementById('messageInput');
+            const text = input.value.trim();
+
+            if (!text) return;
+
+            // Chat'e ekle
+            const messagesWrapper = document.getElementById('messagesWrapper');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message outgoing';
+            messageDiv.innerHTML = `
+                <div class="message-content">${escapeHtml(text)}</div>
+                <div class="message-time">${new Date().toLocaleTimeString()}</div>
+            `;
+            messagesWrapper.appendChild(messageDiv);
+            messagesWrapper.scrollTop = messagesWrapper.scrollHeight;
+
+            // Öğrenme
+            if (textHelper) {
+                textHelper.learnMessage(text);
+            }
+
+            // Input'u temizle
+            input.value = '';
+            document.getElementById('charCount').textContent = '0 / 2000';
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+    </script>
+</body>
+
+</html>

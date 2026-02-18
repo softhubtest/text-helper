@@ -1,0 +1,15 @@
+fastapi==0.109.0
+uvicorn==0.27.0
+pydantic==2.6.0
+transformers==4.37.2
+torch==2.2.0
+symspellpy==6.7.7
+numpy<2.0.0
+# morphology
+zeyrek==0.1.3
+requests==2.31.0
+python-multipart==0.0.9
+jinja2==3.1.3
+aiofiles==23.2.1
+redis==5.0.1
+elasticsearch>=7.17.0

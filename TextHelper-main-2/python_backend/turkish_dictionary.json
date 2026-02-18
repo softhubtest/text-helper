@@ -1,0 +1,34 @@
+[
+    {
+        "word": "merhaba",
+        "frequency": 1000
+    },
+    {
+        "word": "selam",
+        "frequency": 900
+    },
+    {
+        "word": "yardım",
+        "frequency": 800
+    },
+    {
+        "word": "destek",
+        "frequency": 750
+    },
+    {
+        "word": "müşteri",
+        "frequency": 700
+    },
+    {
+        "word": "hizmetleri",
+        "frequency": 650
+    },
+    {
+        "word": "sipariş",
+        "frequency": 600
+    },
+    {
+        "word": "kargo",
+        "frequency": 550
+    }
+]

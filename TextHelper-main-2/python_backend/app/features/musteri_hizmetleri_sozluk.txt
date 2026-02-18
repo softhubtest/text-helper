@@ -1,0 +1,533 @@
+# Müşteri hizmetleri odaklı kelime ve ifadeler (500+)
+# Her satır bir ifade; # ile başlayanlar yorum
+
+merhaba
+selam
+günaydın
+iyi günler
+iyi akşamlar
+iyi geceler
+hoş geldiniz
+hoşgeldiniz
+size nasıl yardımcı olabilirim
+nasıl yardımcı olabilirim
+ne konuda yardımcı olabilirim
+hangi konuda destek almak istersiniz
+yardımcı olabilir miyim
+yardımcı olabilir misiniz
+teşekkürler
+teşekkür ederim
+teşekkür ederiz
+sağolun
+sağol
+rica ederim
+bir şey değil
+önemli değil
+ne demek
+üzgünüm
+özür dilerim
+kusura bakmayın
+kusura bakma
+affedersiniz
+affedersin
+tamam
+anladım
+anladınız mı
+evet
+hayır
+tabii
+tabii ki
+elbette
+kesinlikle
+lütfen
+bilgi
+detay
+detaylı bilgi
+sipariş
+sipariş takibi
+sipariş durumu
+sipariş sorgulama
+sipariş iptali
+sipariş numarası
+sipariş bilgisi
+siparişiniz
+siparişim
+kargo
+kargo takibi
+kargo durumu
+kargo adresi
+kargo ücreti
+kargo teslimat
+teslimat
+teslimat adresi
+teslimat tarihi
+iade
+iade talebi
+iade süreci
+iade koşulları
+iade formu
+iade işlemi
+ürün
+ürün bilgisi
+ürün fiyatı
+ürün stoku
+fiyat
+kampanya
+indirim
+promosyon
+fatura
+fatura ödeme
+fatura sorgulama
+fatura tarihi
+fatura tutarı
+ödeme
+ödeme yöntemi
+ödeme sorgulama
+taksit
+taksit seçenekleri
+abonelik
+abonelik sorgulama
+abonelik iptali
+paket
+tarife
+internet
+şebeke
+sinyal
+destek
+müşteri hizmetleri
+müşteri desteği
+çağrı merkezi
+destek hattı
+yardım hattı
+şikayet
+şikayet bildirimi
+şikayet formu
+şikayet takibi
+sorun
+problem
+hata
+çözüm
+yardım
+yardımcı
+memnuniyet
+müşteri temsilcisi
+müşteri danışmanı
+hesap
+hesap bilgileri
+şifre sıfırlama
+kontrol
+sorgulama
+güncelleme
+iptal
+onay
+bekleme süresi
+acil
+öncelik
+talep
+talebiniz
+talebiniz alındı
+inceliyorum
+inceliyoruz
+geri dönüş
+size geri dönüş yapacağız
+en kısa sürede
+iletin
+iletmeniz
+bilgi verin
+bilgi verebilir misiniz
+numara
+telefon numarası
+e-posta
+e-posta adresi
+adres
+teslimat adresi
+fatura adresi
+değişiklik
+güncelleme yapmak
+iptal etmek
+onaylamak
+reddetmek
+kontrol etmek
+sorgulamak
+ödemek
+iade etmek
+değiştirmek
+yenilemek
+kayıt
+kayıt olmak
+üyelik
+üye olmak
+giriş
+giriş yapmak
+çıkış
+şifre
+şifremi unuttum
+kullanıcı adı
+güvenlik
+doğrulama
+onay kodu
+sms
+mesaj
+bildirim
+bildirim almak
+tercih
+tercihleriniz
+ayar
+ayarlar
+profesyonel
+hızlı
+hızlı çözüm
+kaliteli hizmet
+müşteri memnuniyeti
+geri bildirim
+öneri
+öneriniz
+tavsiye
+şikayet çözümü
+şikayet sonucu
+şikayet numarası
+referans numarası
+talep numarası
+işlem numarası
+bilet numarası
+kayıt numarası
+sipariş kodu
+takip numarası
+kargo takip
+kargo takip numarası
+stok
+stok durumu
+ürün var mı
+ürün mevcut mu
+tahmini teslimat
+teslimat süresi
+teslimat ücreti
+ücretsiz kargo
+bedava kargo
+kapıda ödeme
+havale
+eft
+kredi kartı
+debit kart
+taksitli ödeme
+taksit imkanı
+vade farksız
+indirim kodu
+promosyon kodu
+hediye çeki
+kupon
+kupon kodu
+kampanya kodu
+özel indirim
+fırsat
+fırsatlar
+yeni kampanya
+yeni ürün
+çok satan
+önerilen
+popüler
+favori
+favorilerim
+sepet
+sepetim
+alışveriş
+alışverişe devam
+alışverişi tamamla
+ödeme sayfası
+ödeme ekranı
+kargo seçenekleri
+hızlı kargo
+standart kargo
+express kargo
+aynı gün teslimat
+yarın teslimat
+teslimat zamanı
+teslimat notu
+adres değişikliği
+fatura adresi değişikliği
+iletişim bilgileri
+iletişim
+bizi arayın
+bizi yazın
+canlı destek
+canlı yardım
+chat
+sohbet
+mesajlaşma
+online destek
+çevrimiçi destek
+teknik destek
+teknik sorun
+teknik ekip
+uzman
+uzmanımız
+temsilci
+temsilciniz
+danışman
+danışmanınız
+yetkili
+yetkili servis
+garanti
+garanti süresi
+garanti belgesi
+garanti kapsamı
+cayma hakkı
+cayma
+iade politikası
+iade süresi
+koşulsuz iade
+değişim
+değişim hakkı
+ürün değişimi
+beden değişimi
+renk değişimi
+yanlış ürün
+hatalı ürün
+eksik ürün
+hasarlı ürün
+kusurlu ürün
+arızalı
+arıza
+onarım
+tamir
+servis
+servis süreci
+yedek parça
+orijinal parça
+faturalı
+faturasız
+vergi
+kdv
+kdv dahil
+kdv hariç
+toplam tutar
+ara toplam
+indirim tutarı
+kargo ücreti
+ödeme tutarı
+bakiye
+kalan tutar
+ödenen tutar
+iade tutarı
+iade edilecek tutar
+havale talimatı
+iban
+banka
+banka adı
+şube
+hesap sahibi
+dekont
+ödeme dekontu
+makbuz
+fiş
+fatura kopyası
+belge
+evrak
+gerekli belgeler
+kimlik
+tc kimlik
+vergi numarası
+vergi dairesi
+ünvan
+firma adı
+yetkili kişi
+imza sirküleri
+ticaret sicil
+mersis no
+kep adresi
+e-imza
+müşteri kodu
+müşteri numarası
+müşteri hesabı
+kurumsal
+bireysel
+bireysel müşteri
+kurumsal müşteri
+sözleşme
+sözleşme koşulları
+sözleşme yenileme
+otomatik yenileme
+iptal koşulları
+kullanım koşulları
+gizlilik
+gizlilik politikası
+kişisel veri
+kvkk
+aydınlatma metni
+açık rıza
+rüça hakkı
+veri sorumlusu
+şikayetçi
+şikayet eden
+tüketici
+tüketici hakları
+tüketici mahkemesi
+tüketici heyeti
+haklarınız
+yükümlülüklerimiz
+taahhüt
+garanti belgesi
+satış sözleşmesi
+ön sipariş
+özel sipariş
+toplu sipariş
+kurumsal sipariş
+tedarik
+tedarik süresi
+üretim
+üretim süreci
+revizyon
+revize
+güncelleme notu
+versiyon
+yeni versiyon
+duyuru
+duyurular
+haber bülteni
+bülten
+kampanya duyurusu
+fırsat duyurusu
+erken erişim
+öncelikli erişim
+özel müşteri
+vip müşteri
+sadakat programı
+puan
+puan biriktirme
+puan kullanma
+ödül
+hediye
+hoş geldin hediyesi
+doğum günü hediyesi
+özel gün
+bayram
+yılbaşı
+sezon indirimi
+son gün
+acele
+acil durum
+kritik
+önemli
+dikkat
+uyarı
+bilgilendirme
+hatırlatma
+süre uzatımı
+ek süre
+ek süre talep
+mücbir sebep
+gecikme
+gecikme nedeni
+özür
+özür dileriz
+yanlışlıkla
+hatalı işlem
+düzeltme
+düzeltme yapıldı
+güncellendi
+güncelleme tamamlandı
+işlem tamamlandı
+işleminiz tamamlandı
+işleminiz alındı
+talep oluşturuldu
+kayıt oluşturuldu
+bilet açıldı
+destek talebi
+destek talebiniz
+ticket
+destek numarası
+referans
+referans no
+case numarası
+inceleme
+inceleme süreci
+çözüm süreci
+escalation
+üst seviye
+yönetici
+müdür
+müşteri yöneticisi
+hesap yöneticisi
+özel ilgi
+özel destek
+özel çözüm
+çözüm önerisi
+alternatif
+alternatif çözüm
+geçici çözüm
+kalıcı çözüm
+sonuç
+sonuçlandı
+çözüldü
+kapatıldı
+tamamlandı
+beklemede
+işlemde
+inceleniyor
+üretimde
+kargoda
+dağıtımda
+teslimatta
+teslim edildi
+ulaştı
+ulaştı mı
+teslim aldınız mı
+aldınız mı
+olumlu
+olumsuz
+mağduriyet
+tazmin
+tazminat
+iade edildi
+iade işleminiz
+iade onayı
+iade reddi
+koşul uymuyor
+koşullar sağlanmadı
+süre aşıldı
+süre doldu
+geç teslim
+gecikme tazminatı
+gecikme özrü
+fırsat maliyeti
+tatmin
+memnun
+memnun kaldım
+memnun kalmadım
+değerlendirme
+puanlama
+yıldız
+yorum
+yorum yazmak
+değerlendirme yapmak
+anket
+memnuniyet anketi
+geri bildirim anketi
+öneri ve şikayet
+iletişime geçin
+bize ulaşın
+ulaşın
+arayın
+yazın
+çağrı
+geri arayalım
+geri dönüş yapalım
+geri bildirim verin
+geri bildiriminiz
+teşekkür ederiz
+vakit ayırdığınız için
+ilginiz için
+anlayışınız için
+sabırınız için
+yardımcı olabildiysek
+ne mutlu bize
+başka bir konuda
+başka sorunuz
+başka sorunuz var mı
+başka yardımcı olabileceğim
+iyi günler dileriz
+iyi alışverişler
+güle güle kullanın
+güle güle
+hoşça kalın
+kendinize iyi bakın
