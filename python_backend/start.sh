@@ -6,4 +6,4 @@ python download_model.py
 
 # Uygulamayi baslat
 echo "Uygulama baslatiliyor..."
-uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8080}
+uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8080} --timeout-keep-alive 120

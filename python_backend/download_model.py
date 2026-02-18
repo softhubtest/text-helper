@@ -15,23 +15,27 @@ def download_model():
         os.makedirs(target_dir)
 
     try:
-        print("Tokenizer indiriliyor...")
-        tokenizer = AutoTokenizer.from_pretrained(model_name)
-        tokenizer.save_pretrained(target_dir)
-
-        print("Model indiriliyor (bu biraz zaman alabilir)...")
-        model = AutoModelForCausalLM.from_pretrained(model_name)
-        model.save_pretrained(target_dir)
+        from huggingface_hub import snapshot_download
+        
+        print(f"Model indiriliyor (Memory Optimized): {model_name}...")
+        
+        # OOM Hatası Önlemi: Modeli RAM'e yüklemeden direkt diske indir
+        snapshot_download(
+            repo_id=model_name,
+            local_dir=target_dir,
+            local_dir_use_symlinks=False,  # Dosyaları direkt kopyala
+            resume_download=True
+        )
 
         print("--------------------------------------------------")
         print("BASARILI: Model indirildi ve kaydedildi.")
         print(f"Konum: {target_dir}")
-        print("Sistem artik bu modeli offline kullanabilir.")
         print("--------------------------------------------------")
     
     except Exception as e:
         print(f"HATA: Model indirilemedi! {e}")
-        sys.exit(1)
+        # Hata olsa bile devam et (uygulama çökmesin, sadece AI kapanır)
+        pass
 
 if __name__ == "__main__":
     download_model()
