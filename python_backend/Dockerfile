@@ -10,12 +10,17 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Bağımlılıkları kopyala ve yükle
+# CPU-only Torch kurulumu (Boyut tasarrufu: ~2GB)
+RUN pip install --no-cache-dir torch==2.2.0 --index-url https://download.pytorch.org/whl/cpu
+
+# Diger bagimliliklari kopyala ve yukle
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Model indirme (Build sirasinda indirilsin ki image icinde hazir olsun)
+# Scriptleri kopyala
 COPY download_model.py .
-RUN python download_model.py
+COPY start.sh .
+RUN chmod +x start.sh
 
 # Uygulama kodunu kopyala
 # python_backend dizini içindeyiz, tüm içeriği /app içine atıyoruz
@@ -30,5 +35,4 @@ ENV PORT=8080
 EXPOSE 8080
 
 # Başlatma komutu
-# app/main.py üzerinden çalıştırıyoruz
-CMD sh -c "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8080}"
+CMD ["./start.sh"]
