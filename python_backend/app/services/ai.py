@@ -54,12 +54,34 @@ class TransformerPredictor:
             else:
                 logger.info(f"Offline model bulunamadi, internetten indirilecek: {model_name}")
             
+            # Model yükleme (Memory Optimized)
+            import torch
+            from torch.quantization import quantize_dynamic
+            
+            logger.info(f"Model yukleniyor: {model_name}")
+            
             self.tokenizer = AutoTokenizer.from_pretrained(model_name, local_files_only=os.path.exists(local_model_path))
-            self.model = AutoModelForCausalLM.from_pretrained(model_name, local_files_only=os.path.exists(local_model_path))
+            
+            # 1. Adım: Modeli CPU'ya normal yükle (low_cpu_mem_usage ile RAM spike engelle)
+            self.model = AutoModelForCausalLM.from_pretrained(
+                model_name, 
+                local_files_only=os.path.exists(local_model_path),
+                low_cpu_mem_usage=True
+            )
+            
+            # 2. Adım: Dynamic Quantization (Boyutu yariya indirir: 32-bit -> 8-bit)
+            logger.info("Model optimize ediliyor (Quantization)...")
+            self.model = quantize_dynamic(
+                self.model, {torch.nn.Linear}, dtype=torch.qint8
+            )
+            
+            # 3. Adım: Thread sayisini sinirla (CPU verimliligi)
+            torch.set_num_threads(2)
+            
             self.model.eval()  # Evaluation mode
             
             self.model_loaded = True
-            logger.info("Model hazir")
+            logger.info("Model hazir (Ozgur surum icin optimize edildi)")
         except ImportError:
             logger.warning("transformers eksik (pip install transformers torch)")
             self.model_loaded = False
