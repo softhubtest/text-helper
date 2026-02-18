@@ -35,4 +35,4 @@ ENV PORT=8080
 EXPOSE 8080
 
 # Başlatma komutu
-CMD ["./start.sh"]
+CMD ["bash", "start.sh"]
