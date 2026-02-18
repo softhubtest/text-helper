@@ -3,7 +3,7 @@ import sys
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 def download_model():
-    model_name = "ytu-ce-cosmos/turkish-gpt2-medium"
+    model_name = "redrussianarmy/gpt2-turkish-cased" # Daha hafif model (OOM fix)
     base_dir = os.path.dirname(os.path.abspath(__file__))
     models_dir = os.path.join(base_dir, "models")
     target_dir = os.path.join(models_dir, "turkish-gpt2-medium")

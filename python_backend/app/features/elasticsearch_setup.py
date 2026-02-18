@@ -41,8 +41,7 @@ class ElasticsearchManager:
                 http_auth=self.http_auth,
                 request_timeout=30,
                 max_retries=3,
-                retry_on_timeout=True,
-                maxsize=25  # Connection Pool Size (Default: 10)
+                retry_on_timeout=True
             )
             
             # Bağlantı testi
