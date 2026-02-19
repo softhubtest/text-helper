@@ -1,0 +1,1814 @@
+# ================================================================
+# TEXTHELPER - ULTRA KAPSAMLI MUSTERI HIZMETLERI KELIME LISTESI
+# 2000+ Kelime ve Ifade | Dinamik On-ek Eslestirmesi icin
+# ================================================================
+
+# === KARSILAMA ===
+merhaba
+merhaba, nasıl yardımcı olabilirim
+merhaba, size nasıl yardımcı olabilirim
+merhaba, hoş geldiniz
+merhaba, iyi günler
+merhaba, iyi sabahlar
+merhaba, iyi akşamlar
+merhaba, buyurun
+merhaba, dinliyorum
+merhaba, sizi dinliyorum
+merhaba, yardımcı olmaya hazırım
+merhaba, müşteri hizmetlerine hoş geldiniz
+merhaba, biz buradayız
+merhaba, ne tür bir yardıma ihtiyacınız var
+merhaba, size özel nasıl yardımcı olabilirim
+merhaba, hangi konuda destek istiyorsunuz
+iyi günler
+iyi günler, nasıl yardımcı olabilirim
+iyi günler, buyurun
+iyi günler, sizi dinliyorum
+iyi sabahlar
+iyi sabahlar, nasıl yardımcı olabilirim
+iyi akşamlar
+iyi akşamlar, nasıl yardımcı olabilirim
+günaydın
+günaydın, size nasıl yardımcı olabilirim
+hayırlı günler
+hayırlı sabahlar
+hayırlı akşamlar
+hoş geldiniz
+hoş geldiniz, nasıl yardımcı olabilirim
+hoş geldiniz, müşteri hizmetlerimize
+buyurun, sizi dinliyorum
+buyurun, nasıl yardımcı olabilirim
+sizi aradığınız için teşekkürler
+aramak için teşekkürler
+bizimle iletişime geçtiğiniz için teşekkürler
+başvurunuz için teşekkürler
+tercih ettiğiniz için teşekkürler
+
+# === VEDA ===
+görüşürüz
+iyi günler, görüşmek üzere
+güle güle
+hoşça kalın
+iyi günler dileriz
+iyi haftalar
+iyi hafta sonları
+iyi Pazarlar
+başka bir konuda yardımcı olabilir miyim
+başka bir sorunuz var mı
+başka bir isteğiniz var mı
+yardımcı olabildiysem ne mutlu
+yardımcı olabildiğim için mutluyum
+yardımcı olmaktan memnuniyet duydum
+hizmetinizde olmaktan memnuniyet duyduk
+sizi aradığınız için teşekkürler, iyi günler
+bir sonraki görüşmeye kadar
+kendinize iyi bakın
+kolay gelsin
+
+# === TEŞEKKÜR ===
+teşekkürler
+teşekkür ederim
+teşekkür ederiz
+çok teşekkürler
+çok teşekkür ederim
+çok teşekkür ederiz
+bir şey değil
+rica ederim
+ne demek
+her zaman
+her zaman emrinizdeyiz
+memnuniyetle
+memnuniyetle yardımcı oluruz
+tabii ki
+elbette
+kesinlikle
+sağ olun
+sağ olup var olun
+sağ olasınız
+ilginiz için teşekkürler
+sabrınız için teşekkür ederiz
+anlayışınız için teşekkürler
+değerli geri bildiriminiz için teşekkürler
+güzel değerlendirmeniz için teşekkürler
+olumlu görüşünüz için teşekkürler
+
+# === ÖZÜR ===
+özür dilerim
+çok özür dilerim
+bu durum için özür dileriz
+yaşadığınız sorun için özür dileriz
+rahatsızlık için özür dileriz
+gecikme için özür dileriz
+beklemeniz için özür dileriz
+hatamız için özür dileriz
+yaşattığımız olumsuz deneyim için özür dileriz
+mağduriyetiniz için özür dileriz
+bu kadar beklettiğimiz için özür dileriz
+oluşan aksaklık için özür dileriz
+yaşanan sorun için üzüntülerimizi iletiyoruz
+bu durumun sorumluluğunu kabul ediyoruz
+sizden özür dilemek istiyorum
+daha iyi hizmet vermek için çalışıyoruz
+
+# === YARDIM VE DESTEK ===
+yardım
+yardım almak istiyorum
+yardım edebilir misiniz
+yardım bekliyorum
+yardım ihtiyacım var
+yardım lazım
+yardımcı olabilir misiniz
+yardımcı olabilirim
+yardımcı olmak istiyorum
+yardımcı olmaktan memnuniyet duyarım
+yardımcı olmaya çalışıyoruz
+nasıl yardımcı olabilirim
+ne tür bir yardıma ihtiyacınız var
+hangi konuda yardımcı olabilirim
+hemen yardımcı oluyorum
+ilgileniyorum
+bu konuyla ilgileniyorum
+hemen ilgileniyorum
+en kısa sürede ilgileneceğim
+konuyu inceliyorum
+durumu kontrol ediyorum
+bilgileri inceliyorum
+dosyanızı inceliyorum
+kayıtlarınıza bakıyorum
+sistemi kontrol ediyorum
+bilgilerinizi getiriyorum
+bekleyin lütfen
+bir dakika bekler misiniz
+kısa bir süre bekler misiniz
+araştırıyorum
+araştırıp size bilgi veriyorum
+araştırıp geri dönüyorum
+bir üst birime yönlendiriyorum
+ilgili departmana bağlıyorum
+uzman ekibimize aktarıyorum
+teknik destek hattına bağlıyorum
+sizi ilgili birime aktarıyorum
+transfer yapıyorum
+aktarma yapıyorum
+destek
+destek almak istiyorum
+destek hattı
+destek ekibi
+destek talebi
+destek numarası
+canlı destek
+canlı destek hattı
+online destek
+uzaktan destek
+telefon desteği
+
+# === SİPARİŞ GENEL ===
+sipariş
+sipariş açmak istiyorum
+sipariş bilgisi
+sipariş bilgileri
+sipariş detayları
+sipariş durumu
+sipariş durumu sorgulama
+sipariş geçmişi
+sipariş güncelleme
+sipariş iptal
+sipariş iptali
+sipariş kodu
+sipariş no
+sipariş numarası
+sipariş numaranız nedir
+sipariş onayı
+sipariş onaylandı
+sipariş onaylanmadı
+sipariş özeti
+sipariş sorgulama
+sipariş takibi
+sipariş takip numarası
+sipariş tamamlandı
+sipariş oluşturma
+sipariş oluşturuldu
+sipariş oluşturulmadı
+sipariş verin
+sipariş verdim
+sipariş vermedim
+sipariş verirken hata aldım
+sipariş alındı
+sipariş alınmadı
+siparişim
+siparişim nerede
+siparişim ne oldu
+siparişim ne zaman gelecek
+siparişim hazırlanıyor
+siparişim kargoda
+siparişim tamamlandı
+siparişim iptal edildi
+siparişim onaylanmadı
+siparişim hatalı
+siparişim eksik
+siparişim yanlış
+siparişiniz
+siparişiniz alındı
+siparişiniz onaylandı
+siparişiniz iptal edildi
+siparişiniz hazırlanıyor
+siparişiniz kargoya verildi
+siparişiniz teslim edildi
+siparişimi iptal etmek istiyorum
+siparişimi değiştirmek istiyorum
+siparişimi güncellemek istiyorum
+siparişimi sorgulayabilir misiniz
+yanlış sipariş verdim
+tekrar sipariş vermek istiyorum
+sipariş tarihini değiştirmek istiyorum
+birden fazla sipariş var
+siparişler nerede
+tüm siparişlerim
+
+# === KARGO GENEL ===
+kargo
+kargo bilgisi
+kargo bilgileri
+kargo durumu
+kargo durumu sorgulama
+kargo firması
+kargo firması bilgisi
+kargo gecikmesi
+kargo hasarı
+kargo kayıp
+kargo kayboldu
+kargo kodu
+kargo konumu
+kargo numarası
+kargo şirketi
+kargo takibi
+kargo takip kodu
+kargo takip numarası
+kargo teslim edildi
+kargo teslim edilmedi
+kargo teslim tarihi
+kargo teslim süresi
+kargo teslim saati
+kargo ücreti
+kargo ücreti ne kadar
+kargo ücretini kim öder
+kargom nerede
+kargom ne zaman gelecek
+kargom kayboldu
+kargom hasar gördü
+kargom teslim edilmedi
+kargom gecikiyor
+kargonum nerede
+kargoyu takip etmek istiyorum
+kargo firmasını aramak istiyorum
+kargo adresim hatalı
+kargo adresi değişikliği
+kargo adresimi güncellemek istiyorum
+ücretsiz kargo
+ücretsiz kargo kampanyası
+ücretsiz kargo sınırı
+ekspres kargo
+hızlı teslimat
+aynı gün teslimat
+ertesi gün teslimat
+kapıda teslim
+kapıya teslim
+
+# === TESLİMAT ===
+teslimat
+teslimat adresi
+teslimat adresi değişikliği
+teslimat adresi hatalı
+teslimat adresi güncelleme
+teslimat bilgisi
+teslimat durumu
+teslimat gecikti
+teslimat gecikmesi
+teslimat hatası
+teslimat onayı
+teslimat süresi
+teslimat süresi ne kadar
+teslimat tarihi
+teslimat tarihi değişikliği
+teslimat tamamlandı
+teslimat yapılamadı
+teslimat yapılmadı
+teslim alındı
+teslim alındı bildirimi
+teslim alınmadı
+teslim edildi
+teslim edilmedi
+teslim görevlisi
+teslim noktası
+teslim tarihi
+teslim tarihi ne zaman
+teslim zamanı
+teslim zamanı değiştirme
+ürün teslim edilmedi
+ürün hâlâ ulaşmadı
+ürün daha gelmedi
+ürün ne zaman gelecek
+tahmini teslimat tarihi
+teslimat takibi
+adresime teslim edilmedi
+yanlış adrese teslim edildi
+komşuya bırakıldı
+güvenli teslimat noktası
+elden teslim
+kapıda ödeme seçeneği
+imza karşılığı teslim
+teslim saatini değiştirebilir miyim
+teslimat randevusu
+
+# === ÜRÜN GENEL ===
+ürün
+ürün arızalı
+ürün barkodu
+ürün bedeni
+ürün bilgisi
+ürün bilgileri
+ürün bozuk
+ürün çalışmıyor
+ürün değişimi
+ürün eksik
+ürün fiyatı
+ürün garanti kapsamında
+ürün garanti dışı
+ürün hasarlı
+ürün iade
+ürün iadesi
+ürün içeriği
+ürün kodu
+ürün ölçüsü
+ürün mevcut mu
+ürün modeli
+ürün önerisi
+ürün özellikleri
+ürün rengi
+ürün seri numarası
+ürün stoğu
+ürün stokta yok
+ürün stokta var
+ürün tavsiyesi
+ürün ne zaman stokta olacak
+ürün orijinal mi
+ürün açıklaması
+ürün karşılaştırma
+ürüne uygun aksesuar var mı
+yanlış ürün gönderildi
+ürün kutuda değildi
+ürün eksik geldi
+ürün paketi açık geldi
+ürün kırık geldi
+ürün çizik geldi
+ürün kirli geldi
+ürün sahte mi
+ürün orijinal mi
+ürün kalitesi
+ürün kalite sorunu
+ürün kullanım ömrü
+ürün kullanım kılavuzu
+ürün uyumluluğu
+ürünle ilgili şikayetim var
+ürün teknik özellikleri
+
+# === İADE ===
+iade
+iade belgesi
+iade bilgisi
+iade edildi
+iade edilemedi
+iade edilmedi
+iade edilmez mi
+iade etmek istiyorum
+iade ettim
+iade formu
+iade hakkı
+iade info
+iade iptali
+iade kargo
+iade kargo bedeli kim öder
+iade kargo kodu
+iade koşulları
+iade limiti
+iade merkezi
+iade onayı
+iade onaylandı
+iade onaylanmadı
+iade politikası
+iade prosedürü
+iade ret
+iade süreci
+iade süreci ne kadar sürer
+iade süresi
+iade süresi kaç gün
+iade süresi doldu mu
+iade süresi geçmiş
+iade şartları
+iade talebi
+iade talebi açmak istiyorum
+iade talebim var
+iade talebim onaylandı mı
+iade ücretsiz mi
+ürün iadesi
+ürün iadesi nasıl yapılır
+ürün iadesi yapmak istiyorum
+para iadesi
+para iadesi yapıldı mı
+para iadesi ne zaman gelecek
+para iadesi talep ediyorum
+para iadesi bekliyorum
+para iadesi onaylandı mı
+para iadesi iptal
+iade için ne yapmam gerekiyor
+iade için gerekli belgeler
+iade için gereken bilgiler
+iade numarası
+iade takibi
+iade takip numarası
+iade işlemim tamamlandı mı
+ücretsiz iade hakkı
+ücretsiz iade var mı
+iade hakkımı kullanamıyorum
+iade kargo etiketi
+iade nasıl yapılır
+
+# === DEĞİŞİM ===
+değişim
+değişim belgesi
+değişim bilgisi
+değişim koşulları
+değişim onayı
+değişim ret
+değişim süreci
+değişim süresi
+değişim talebi
+değişim talep etmek istiyorum
+değişim yapmak istiyorum
+ürün değişimi
+ürün değişimi yapmak istiyorum
+ürün değişimi ne kadar sürer
+beden değişimi
+renk değişimi
+model değişimi
+yanlış ürünü değiştirmek istiyorum
+hasarlı ürünü değiştirmek istiyorum
+arızalı ürünü değiştirmek istiyorum
+değişim için ne yapmam gerekiyor
+değişim ücreti var mı
+ücretsiz değişim
+
+# === FATURA ===
+fatura
+fatura adresi
+fatura adresi güncelleme
+fatura adresi hatalı
+fatura belgesi
+fatura bilgisi
+fatura bilgileri
+fatura düzeltme
+fatura düzeltmek istiyorum
+fatura itirazı
+fatura iptali
+fatura kesme
+fatura kopyası
+fatura kopyası alabilir miyim
+fatura kopyası gönderin
+fatura numarası
+fatura numarasını öğrenebilir miyim
+fatura sorunu
+fatura tarihi
+fatura tutarı
+fatura tutarı hatalı
+fatura yanlış
+fatura yeniden düzenleme
+e-fatura
+e-fatura kaydı
+e-fatura sistemi
+e-fatura almak istiyorum
+e-fatura adresimi güncellemek istiyorum
+e-fatura başvurusu
+elektronik fatura
+elektronik fatura kaydı
+kağıt fatura
+kağıt fatura istiyorum
+fatura adresimi değiştirmek istiyorum
+fatura tekrar gönderir misiniz
+faturamı alamadım
+faturamı kaybettim
+faturaya itiraz ediyorum
+fatura tutarını anlamıyorum
+fatura içeriği hatalı
+faturada fazla ücret var
+kurumsal fatura
+kurumsal fatura talebi
+bireysel fatura
+vergi numarası faturada yok
+KDV iadesi
+KDV bilgisi
+KDV oranı
+
+# === ÖDEME ===
+ödeme
+ödeme bilgisi
+ödeme bilgileri
+ödeme durumu
+ödeme geçmişi
+ödeme hatası
+ödeme iade
+ödeme iadesi
+ödeme iadesi ne zaman gelir
+ödeme iptal
+ödeme mükerrer
+ödeme onayı
+ödeme onayı bekliyor
+ödeme onaylanmadı
+ödeme sorunu
+ödeme seçeneği
+ödeme yapılamadı
+ödeme yapılmadı
+ödeme yapıldı
+ödeme yapıldı mı
+ödeme yaptım
+ödeme yöntemleri
+ödeme yöntemi değiştirme
+ödeme tarihi
+ödeme tarihi ne zaman
+ödeme tutarı
+ödeme makbuzu
+kredi kartı
+kredi kartı ile ödeme
+kredi kartı bilgileri
+kredi kartı eklemek istiyorum
+kredi kartımdan ücret kesildi
+kredi kartı iptali
+kredi kartı fraud
+banka kartı
+banka kartı ile ödeme
+banka havalesi
+havale ile ödeme
+havale bilgileri
+IBAN numarası
+EFT bilgileri
+havale onayı
+kapıda ödem
+kapıda nakit ödeme
+kapıda kart ödeme
+online ödeme
+kredi ile ödeme
+taksit
+taksit seçeneği
+taksit sayısı
+taksit bilgisi
+taksit miktarı
+taksit faizi
+ek taksit yapabilir misiniz
+taksit böldb ünürmüsünüz
+peşin ödeme
+erken ödeme
+otomatik ödeme
+otomatik ödeme talimatı
+otomatik ödeme iptali
+ödeme planı
+ödeme planı değişikliği
+borcumu ödemek istiyorum
+borç bilgisi
+borç miktarı
+eksi bakiye
+bakiye bilgisi
+bakiyem ne kadar
+bakiye yükleme
+bakiye yüklemek istiyorum
+
+# === GARANTİ ===
+garanti
+garanti kapsamı
+garanti kapsamında mı
+garanti kaydı
+garanti kayıt numarası
+garanti koşulları
+garanti merkezi
+garanti süresi
+garanti süresi ne kadar
+garanti süresi doldu mu
+garanti süresi bitmeden önce
+garanti belgesi
+garanti belgesi kayboldu
+garanti belgesi yenileme
+garanti belgesi nasıl alırım
+garanti dışı
+garanti dışı onarım
+garanti uzatma
+garanti uzatma talebi
+garanti uzatma paketi
+garanti ile ilgili sorunum var
+garanti kapsamında değil
+garanti şartları
+garanti başvurusu
+uluslararası garanti
+global garanti
+
+# === SERVİS VE ONARIM ===
+servis
+servis adı
+servis adresi
+servis bilgisi
+servis fiyatı
+servis merkezi
+servis noktası
+servis noktası nerede
+servis randevusu
+servis randevusu almak istiyorum
+servis süresi
+servis talebi
+servis talep etmek istiyorum
+servis ücreti
+yetkili servis
+yetkili servis adresi
+yetkili servis bilgisi
+yetkili servis noktaları
+yetkili servis listesi
+teknik servis
+teknik servis talebi
+teknik servis randevusu
+teknik servis ücreti
+arıza bildirimi
+arıza kaydı
+arıza tespiti
+arıza onarım süresi
+onarım
+onarım süresi
+onarım ücreti
+onarım tamamlandı mı
+onarım tamamlandı bilgisi
+onarım için ne gerekiyor
+fabrika tamiri
+ekran değişimi
+pil değişimi
+parça değişimi
+yedek parça
+yedek parça ücflreti
+bakım
+bakım hizmeti
+periyodik bakım
+bakım ücreti
+bakım randevusu
+
+# === HESAP VE ÜYELİK ===
+hesap
+hesap açma
+hesap açma nasıl yapılır
+hesap bilgileri
+hesap bilgileri güncelleme
+hesap bilgilerimi görmek istiyorum
+hesap dondurma
+hesap engeli
+hesap erişimi
+hesap erişimi yok
+hesap güncelleme
+hesap kapatma
+hesap kapatma talebi
+hesap silme
+hesap silme talebi
+hesabıma erişemiyorum
+hesabıma giremiyorum
+hesabım askıya alındı
+hesabım bloke
+hesabım donduruldu
+hesabım kapatıldı
+hesabım neden kapandı
+hesabımı silmek istiyorum
+hesabımı kapatmak istiyorum
+hesabımı dondurmak istiyorum
+hesabımı yönetmek istiyorum
+kullanıcı adı
+kullanıcı adı değişikliği
+kullanıcı adımı unuttum
+kullanıcı adı bulma
+şifre
+şifre değiştirme
+şifre değiştirmek istiyorum
+şifre hatası
+şifre sıfırlama
+şifre sıfırlama linki
+şifre sıfırlama işlemi
+şifremi unuttum
+şifremi günceltmek istiyorum
+şifre kilitlendi
+güvenlik sorusu
+güvenlik kodu
+iki faktörlü doğrulama
+SMS doğrulama
+e-posta doğrulama
+doğrulama kodu
+doğrulama kodu gelmedi
+doğrulama kodu hatalı
+üyelik
+üyelik avantajları
+üyelik başlangıcı
+üyelik bilgileri
+üyelik fiyatı
+üyelik iptali
+üyelik iptal etmek istiyorum
+üyelik kapatma
+üyelik paketi
+üyelik paket değişikliği
+üyelik paket yükseltme
+üyelik paket düşürme
+üyelik yenileme
+üyelik yenilenmedi
+üyelik yenileme tarihi
+üyelik süresi
+premium üyelik
+premium üyeliğe geçmek istiyorum
+ücretsiz deneme
+ücretsiz deneme süresi
+ücretsiz deneme sonrası
+üyelik ücreti
+üyelik ücreti iadesi
+abonelik
+abonelik başlatma
+abonelik bilgisi
+abonelik iptali
+abonelik iptal etmek istiyorum
+abonelik paketi
+abonelik sureshi
+abonelik yenileme
+abonelik yenilenmedi
+abonelik ücreti
+aboneliğimi iptal etmek istiyorum
+
+# === PROFİL VE KİŞİSEL BİLGİLER ===
+profil
+profil güncelleme
+profil bilgileri
+profil fotoğrafı
+kişisel bilgiler
+kişisel bilgi güncelleme
+kişisel bilgilerimi güncellemek istiyorum
+ad soyad değişikliği
+doğum tarihi değişikliği
+cinsiyet değişikliği
+e-posta adresi
+e-posta adresi değişikliği
+e-posta güncelleme
+e-posta güncellemek istiyorum
+e-posta adresimi unuttum
+telefon numarası
+telefon numarası değişikliği
+telefon numarası güncelleme
+telefon numaramı güncellemek istiyorum
+adres
+adres bilgisi
+adres değişikliği
+adres güncelleme
+adresimi güncellemek istiyorum
+yeni adresimi eklemek istiyorum
+adresim doğru mu
+birinci adres
+ikinci adres
+varsayılan adres
+fatura adresi
+teslimat adresi
+şehir değişikliği
+ilçe değişikliği
+posta kodu
+TC kimlik numarası
+pasaport numarası
+vergi numarası
+şirket bilgileri
+iletişim tercihleri
+bildirim tercihleri
+e-posta bildirimleri
+SMS bildirimleri
+push bildirimleri
+reklam tercihleri
+
+# === ŞİKAYET ===
+şikayet
+şikayet bilgisi
+şikayet durumu
+şikayet etmek istiyorum
+şikayet formu
+şikayet hattı
+şikayet kaydı
+şikayet merkezi
+şikayet nedeni
+şikayet numarası
+şikayet onayı
+şikayet prosedürü
+şikayet süreci
+şikayet takibi
+şikayet takip numarası
+şikayetim var
+şikayetimi iletmek istiyorum
+şikayetimi kayıt etmek istiyorum
+şikayetim hakkında ne yapıldı
+şikayetim çözüme kavuşmadı
+şikayetim çözüldü mü
+şikayetim ne aşamada
+şikayet yanıtı
+şikayet sonucu
+şikayet geri bildirimi
+memnun değilim
+memnuniyetsizim
+hayal kırıklığı yaşadım
+bu hizmetten memnun kalmadım
+beklenilen hizmet alınmadı
+beklentilerimi karşılamıyor
+kalitesiz hizmet aldım
+kötü muamele gördüm
+çok uzun sürdü
+aşırı geç yanıt
+çözüme kavuşturulmadı
+cevap alamadım
+geri dönüş olmadı
+tekrar aranmadım
+söz verildi ama yerine getirilmedi
+taahhüt yerine getirilmedi
+haksız uygulama
+haksız ücretlendirme
+izinsiz ücret kesildi
+fatura çok yüksek
+beklenmedik ücret
+
+# === TALEP ===
+talep
+talep açmak istiyorum
+talep bilgisi
+talep durumu
+talep etmek istiyorum
+talep formu
+talep no
+talep numarası
+talep onayı
+talep ret
+talep sonucu
+talep süreci
+talep şartları
+talep takibi
+talep takip numarası
+talebim var
+talebim onaylandı mı
+talebim hakkında bilgi almak istiyorum
+talebim ne aşamda
+talebim kaydedildi mi
+bilgi talebi
+değişiklik talebi
+geri ödeme talebi
+iptal talebi
+iade talebi
+
+# === KAMPANYA VE İNDİRİM ===
+kampanya
+kampanya bilgisi
+kampanya detayları
+kampanya içeriği
+kampanya kodu
+kampanya koşulları
+kampanya süresi
+kampanya tarihi
+kampanyadan yararlanmak istiyorum
+kampanyaya katılmak istiyorum
+aktif kampanyalar neler
+mevcut kampanyalar
+indirim
+indirim bilgisi
+indirim kodu
+indirim oranı
+indirim uygulanmadı
+indirimden yararlanamıyorum
+indirimimi kullanmak istiyorum
+promosyon
+promosyon bilgisi
+promosyon kodu
+promosyo kodu geçersiz
+promosyon kodumu kullanamıyorum
+kupon
+kupon kodu
+kupon kodu nerede
+kupon kodu geçersiz
+kupon kodu nasıl kullanılır
+hediye çeki
+hediye çeki tanımlama
+hediye çeki bakiyesi
+puan
+puan bilgisi
+puan bakiyesi
+puan kullanma
+puanlarımı kullanmak istiyorum
+puan ne zaman expire olur
+sadakat programı
+sadakat puanı
+sadakat avantajları
+özel teklif
+kişiye özel kampanya
+doğum günü indirimi
+yıllık indirim
+mevsimsel indirim
+sezonluk kampanya
+Black Friday kampanjası
+indirim sezonu
+
+# === TEKNİK DESTEK ===
+teknik destek
+teknik destek almak istiyorum
+teknik destek hattı
+teknik destek ekibi
+teknik destek randevusu
+teknik destek sorunu
+teknik hata
+teknik arıza
+teknik sorun
+teknik yardım
+teknik yardım almak istiyorum
+sistemde hata var
+sistemde sorun var
+sistem çalışmıyor
+sistem yavaş
+sistem cevap vermiyor
+uygulama çalışmıyor
+uygulama açılmıyor
+uygulama çöküyor
+uygulama yanıt vermiyor
+internet bağlantı sorunu
+bağlantı sorunu var
+bağlantı kesiliyor
+bağlantı kurulamıyor
+erişim sorunu
+erişim sağlanamıyor
+siteye erişilemiyor
+platforma erişilemiyor
+giriş yapamıyorum
+giriş yapılamıyor
+giriş sorunu
+login hatası
+şifre hatalı uyarısı
+hesap kilitlendi
+hesap erişimi engellendi
+ekran hatası
+ekran karardı
+ekran donar
+hata mesajı
+hata kodu
+hata kodu nedir
+güncelleme sorunu
+güncelleme yapılamıyor
+güncelleme indirme hatası
+yükleme sorunu
+yükleme tamamlanmıyor
+kurulum sorunu
+kurulum hatası
+veri kaybı
+veri kaybettim
+dosya yüklenmiyor
+dosya açılmıyor
+yavaş çalışıyor
+donuyor
+çöküyor
+yeniden başlatma
+fabrika ayarlarına sıfırlama
+hard reset
+cache temizleme
+cookie temizleme
+tarayıcı sorunu
+tarayıcı güncellemesi
+mobil uygulama sorunu
+Android sorunu
+iOS sorunu
+uygulama düzelmedi
+uygulamayı sildim yeniden yükledim sorun devam ediyor
+wifi sorunu
+mobil data sorunu
+Bluetooth sorunu
+NFC sorunu
+barkod okutulmuyor
+QR kod sorunu
+
+# === ADRES VE İLETİŞİM ===
+adres
+adres bilgisi
+adres değişikliği
+adres güncelleme
+yeni adresim
+adresim değişti
+fatura adresi
+teslimat adresi
+şube adresi
+şube bilgisi
+şube listesi
+en yakın şube
+en yakın bayi
+en yakın servis noktası
+açık şubeler
+telefon numarası
+iletişim numarası
+müşteri hizmetleri numarası
+çağrı merkezi numarası
+çağrı merkezi saatleri
+e-posta adresi
+e-posta ile ulaşmak istiyorum
+web sitesi
+online şube
+internet bankacılığı
+canlı destek
+chat desteği
+WhatsApp desteği
+sosyal medya desteği
+Twitter desteği
+Instagram desteği
+Facebook desteği
+şikayet e-postası
+iletişim formu
+iletişim sayfası
+
+# === ÖZEL SEKTÖR - OPERATÖR / TELEFON ===
+hat
+hat bilgisi
+hat açma
+hat kapatma
+hat iptal
+hat kilit
+abonelik planı
+tarife
+tarife bilgisi
+tarife değişikliği
+tarife seçimi
+yeni tarife
+uygun tarife öner
+dakika paketi
+SMS paketi
+internet paketi
+internet kotası
+kota bilgisi
+kota aşımı
+kota yenileme
+ek kota satın almak istiyorum
+veri paketi
+veri paketi bilgisi
+roaming
+roaming açma
+yurt dışı aramaları
+uluslararası arama paketi
+numara taşıma
+numara taşıma talebi
+fatura dönemi
+fatura kesim tarihi
+faturasız hat
+
+# === ÖZEL SEKTÖR - BANKA / FİNANS ===
+banka
+banka hesabı
+banka hesap açma
+banka işlemi
+banka kartı
+kredi kartı
+kredi kartı başvurusu
+kredi başvurusu
+kredi limiti artırma
+kredi limiti düşürme
+kart şifresi
+kart şifresi değiştirme
+kart engelleme
+kartımı kaybettim
+kart çalındı
+kartı iptal etmek istiyorum
+yeni kart talebi
+banka havalesi
+EFT işlemi
+IBAN numarası
+hesap bakiyesi
+hesap ekstresi
+kredi ekstresi
+limit bilgisi
+borç kapatma
+taksitli ödeme
+sabit taksit
+değişken taksit
+faiz oranı
+gecikme faizi
+risk şikayeti
+dolandırıcılık şikayeti
+sahte işlem bildirimi
+itiraz işlemi
+hesaba yanlış para yatırıldı
+para transferi
+
+# === ÖZEL SEKTÖR - SİGORTA ===
+sigorta
+sigorta poliçesi
+sigorta bilgisi
+sigorta başvurusu
+sigorta iptali
+sigorta kapsamı
+hasar bildirimi
+hasar tespiti
+hasar dosyası
+hasar tazminatı
+hasar ödemesi
+acente bilgisi
+poliçe numarası
+sigorta süresi
+sigorta yenileme
+sağlık sigortası
+araç sigortası
+konut sigortası
+seyahat sigortası
+hayat sigortası
+kasko
+trafik sigortası
+DASK
+
+# === ÖZEL SEKTÖR - E-TİCARET ===
+alışveriş
+alışveriş sepeti
+sepet bilgisi
+ödeme adımı
+alışveriş iadesi
+alışveriş geçmişi
+sipariş özeti
+ürün puanı
+ürün yorumu
+ürüne yorum yazmak istiyorum
+ürün değerlendirmesi
+kargo ücreti ücretsiz mi
+minimum sipariş miktarı
+aynı gün kargo
+hediye paketi
+hediye notu
+fiyat düşünce bildir
+stok bildirimi
+favori listesi
+listemde favoriler
+beden tablosu
+renk seçeneği
+ürün incelemesi
+satıcı değerlendirmesi
+satıcıya soru sor
+
+# === ÖZEL SEKTÖR - KONUT / KİRALIK ===
+kira sözleşmesi
+kira bilgisi
+kira artışı
+kira iadesi
+depozito
+depozito iadesi
+tahliye bildirimi
+evcil hayvan politikası
+eşyalı kiralık
+site yönetimi
+aidat bilgisi
+ortak alan şikayeti
+komşu şikayeti
+ısınma sistemi
+su arızası
+elektrik arızası
+asansör arızası
+
+# === GENEL KULLANIM ===
+acil
+acil yardım
+acil destek
+acil durum
+acil bildirim
+lütfen
+mümkün olan en kısa sürede
+en kısa sürede
+hemen
+ivedilikle
+beklemek istemiyorum
+bekleme sürem uzun
+çok uzun bekliyorum
+ne kadar sürer
+tahmini süre
+ne zamana kadar
+kaç gün sürer
+kaç iş günü
+kaç saat sürer
+kesin süre verebilir misiniz
+iş günü
+mesai saatleri
+çalışma saatleri
+açık saatler
+alternatif çözüm
+başka seçenek
+başka seçenek var mı
+hangi şartlarda çözülür
+benim için ne yapabilirsiniz
+ne yapabilirim
+nasıl başvurabilirim
+nasıl yapabilirim
+daha hızlı çözüm
+hızlandırılabilir mi
+öncelikli işlem yapılabilir mi
+üst yönetim
+yöneticiye bağlanmak istiyorum
+müdürle görüşmek istiyorum
+sorumlu kim
+yetkili birime bağlar mısınız
+yazılı cevap istiyorum
+e-posta ile bilgilendirilmek istiyorum
+SMS bildirim istiyorum
+onay mesajı bekliyorum
+referans numarası
+başvuru numarası
+takip numarası
+işlem numarası
+kaydedildi mi
+onaylandı mı
+ne zaman tamamlanır
+bekleme süresi
+işlem sürücü
+işlem durumu
+işlem onayı
+işlem iptal
+işlem geçmişi
+neden bu kadar sürdü
+daha önce aradım
+birden fazla kez aradım
+sorunum hâlâ çözülmedi
+çözüm bulunamadı
+kesin çözüm istiyorum
+kalıcı çözüm
+geçici çözüm yeterli değil
+geri bildirim
+öneri
+öneri göndermek istiyorum
+görüş bildirmek istiyorum
+anket doldurmak istiyorum
+hizmet değerlendirme
+
+# === KVKK VE GİZLİLİK ===
+KVKK
+kişisel veri
+kişisel verilerimi silmek istiyorum
+kişisel verilerimi güncellemek istiyorum
+veri silme talebi
+veri şikayet
+rıza geri çekme
+rıza belgesi
+açık rıza
+gizlilik politikası
+kullanım koşulları
+çerez politikası
+veri işleme
+veri aktarımı
+hesabımdan verilerimi indirmek istiyorum
+verilerimi görmek istiyorum
+birinin verilerini bildirmek istiyorum
+
+# ================================================================
+# TELEKOMÜNIKASYON OPERATÖRÜ - GENİŞLETİLMİŞ SÖZLÜK
+# Çağrı merkezi, hat yönetimi, tarife, cihaz, teknik
+# ================================================================
+
+# === HAT VE SİM KART ===
+hat numarası
+hat numaramı öğrenmek istiyorum
+hat sahibi bilgileri
+hat sahibi kim
+hat sahipliği değişikliği
+hat devir işlemi
+hat devri nasıl yapılır
+hat devri için belgeler
+hat birleştirme
+hat transferi
+hat aktarma
+hat limiti nedir
+hat başvurusu
+hat başvurusu nasıl yapılır
+hat aktivasyonu
+hat aktivasyon süresi
+hat aktivasyonu neden tamamlanmadı
+hat askıya alındı
+hat kilitli
+hat kapandı
+hat neden kapandı
+hat yeniden açma
+hat yeniden açılabilir mi
+hat sonlandırma
+hat sonlandırma talebi
+hat sonlandırma ücreti
+hat sonlandırma koşulları
+SIM kart
+SIM kart değişimi
+SIM kart takma
+SIM kart okutulmuyor
+SIM kart tanınmıyor
+yeni SIM kart
+SIM kart şifresi
+SIM kart şifresi yanlış
+SIM kart kilitlendi
+SIM kart kaydı
+SIM kart aktivasyonu
+eSIM
+eSIM aktivasyonu
+eSIM tanımlama
+eSIM nasıl yüklenir
+eSIM destekli cihaz
+SIM kart kayıp veya çalıntı
+çalınan hat bloke etme
+kayıp SIM bloke
+SIM yenileme ücreti
+dijital SIM
+fiziksel SIM kart
+
+# === TARİFE VE PAKETLER ===
+tarife bilgisi
+mevcut tarifem
+mevcut paketim
+tarife değiştirmek istiyorum
+en uygun tarife hangisi
+tarife karşılaştırma
+tarife fiyatları
+tarife içeriği
+tarife yükseltme
+tarife düşürme
+tarife taahhütlü mü
+taahhütsüz tarife
+taahhütlü tarife
+taahhüt süresi
+taahhüt bitiş tarihi
+taahhüt erken çıkış bedeli
+taahhüt tazminatı
+taahhütten çıkmak istiyorum
+bireysel tarife
+kurumsal tarife
+aile paketi
+aile paketi üyesi ekleme
+aile paketi üyesi çıkarma
+çoklu hat paketi
+ikinci hat indirimi
+ana hat
+ikinci hat
+ek hat açma
+ek hat ücreti
+sınırsız konuşma paketi
+sınırsız SMS paketi
+sınırsız internet paketi
+hibrit tarife
+hazır kart
+hazır kart başvurusu
+hazır kart aktivasyonu
+hazır kart bakiye sorgulama
+hazır kart yükleme
+hazır kart geçiş tarifleri
+kontörlü hat
+kontör yükleme
+kontör ne kadar kaldı
+konuşma paketi
+dakika paketi nedir
+paket bitince ne olur
+paket bitince ücretlendirme
+paket yenileme
+paket yenileme tarihi
+paket yenileme ücretim
+paket kullanım raporu
+paket kullanım bilgisi
+paket kullanımını sorgulama
+paket ekle
+ek paket satın alma
+ek veri paketi
+geçerli paketlerim
+aktif paketler
+ek SMS paketi
+yurt içi arama tanımı
+gece tarifesi
+hafta sonu tarifesi
+sosyal medya paketi
+WhatsApp paketi
+YouTube paketi
+streaming paketi
+müzik paketi
+
+# === İNTERNET VE VERİ ===
+internet hızı
+internet hızı düştü
+internet hızım çok yavaş
+internet bağlantısı kopuyor
+mobil internet çalışmıyor
+4G çalışmıyor
+5G çalışmıyor
+4G aktif değil
+5G aktif değil
+4G sinyali yok
+5G sinyali yok
+APN ayarları
+APN ayarları nasıl yapılır
+veri kotam doldu
+internet kotam bitti
+kota bilgisi
+kota kaç GB
+kota aşımı ücreti
+kota yenileme tarihi
+kota kullanım detayı
+kota takip nasıl yapılır
+veri tasarruf modu
+veri kullanım raporu
+internet hız testi
+indirme hızı
+yükleme hızı
+ping değeri
+internet altyapısı
+internet çekim alanı sorunu
+çekim alanında sorun
+sinyal zayıf
+sinyal yok
+bölgemde sinyal var mı
+kapsama alanı kontrolü
+kapsama alanı dışında
+dağlık alanda kapsama
+köyde sinyal var mı
+bina içinde sinyal yok
+binada kapsama sorunu
+ev içi kapsama iyileştirme
+Wi-Fi araması
+Wi-Fi araması aktif mi
+Wi-Fi araması nasıl açılır
+hotspot paylaşımı
+internet paylaşımı
+mobil hotspot
+tethering
+internet paylaşım limiti
+internet önceliği
+ikinci hatta internet
+GPRS ayarları
+H+ nedir
+LTE nedir
+5G nedir
+5G hızı nedir
+5G bölgem var mı
+
+# === ARAMA VE SMS ===
+arama sorunu
+arama düşüyor
+arama bağlanmıyor
+sesli posta
+sesli posta mesajı
+sesli posta şifresi
+sesli posta nasıl açılır
+sesli posta kapatma
+gelen çağrı engelleme
+giden çağrı engelleme
+çağrı yönlendirme
+çağrı yönlendirme nasıl açılır
+çağrı yönlendirme iptal
+çağrı bekletme
+çağrı bekletme açma
+çağrı bekletme kapatma
+üç yönlü görüşme
+konferans araması
+numara gizleme
+arayan kimseyi göster
+arayan kimlik engelleme
+arama geçmişi
+SMS sorunu
+SMS gönderilmiyor
+SMS alınamıyor
+SMS bildirim sorunu
+toplu SMS
+uluslararası SMS
+uluslararası arama
+uluslararası arama açma
+yurt dışı araması engelleme
+
+# === ROAMING VE YURT DIŞI ===
+roaming
+roaming aktif
+roaming açma
+roaming kapatma
+roaming ücreti
+roaming ücretlendirme
+yurt dışı paketi
+yurt dışı internet paketi
+yurt dışı arama paketi
+yurt dışı SMS paketi
+AB roaming
+Avrupa roaming
+AB'de serbest dolaşım
+yurt dışında çekim
+yurt dışında internet çalışmıyor
+yurt dışında meşgul sinyali
+yurt dışında sinyal yok
+yurt dışında fatura ne kadar olur
+roaming fatura şoku
+roaming limiti
+roaming limiti ayarlama
+roaming bildirim
+roaming bildirimleri
+ülke bazlı roaming paketi
+dünya paketi
+tatil paketi
+gezi paketi
+uluslararası hat
+uluslararası numara çevirme
+alan kodu bilgisi
+hangi ülkelerde kapsama var
+Avrupa'da hangi ücretler geçerli
+
+# === NUMARA TAŞIMA ===
+numara taşıma
+numara taşıma talebi
+numara taşıma nasıl yapılır
+numara taşıma ne kadar sürer
+numara taşıma süreci
+numara taşıma için başvuru
+numara taşıma şartları
+numara taşıma ücretli mi
+numara taşıma ücretsiz mi
+numara taşıma belgesi
+numara taşıma formu
+numara taşıma taahhüdü
+taşıma sonrası işlemler
+eski operatörden ayrılma
+taşıma iptal
+taşıma takibi
+taşıma kodu
+taşıma kodu nasıl alınır
+taşıma kodu nerede geçerli
+PVK kodu
+PVK kodu nedir
+elektronik numara taşıma
+taşıma onaylama
+taşıma tarih değişikliği
+taşıma randevusu
+taşıma iptal talebi
+
+# === CİHAZ VE AKSESUAR ===
+cihaz satın alma
+cihaz fiyatı
+taksitli cihaz
+cihaz taksit seçenekleri
+cihaz kampanyası
+cihaz modeli
+cihaz stoku
+cihaz stokta var mı
+cihaz beğendim satın almak istiyorum
+cihaz teslimatı
+cihaz teslimat süresi
+cihaz garantisi
+cihaz garanti süresi
+cihaz arızası
+cihaz servis talebi
+cihaz teknik sorun
+cihaz yazılım güncelleme
+cihaz firmware güncelleme
+cihaz değişimi
+cihaz iade
+cihaz faturası
+kapsamlı cihaz sigortası
+cihaz sigortası
+cihaz çalındı
+cihaz kayboldu
+cihazı engelleme
+IMEI numarası
+IMEI sorgulama
+IMEI engelleme
+IMEI engeli kaldırma
+aksesuar satın alma
+kulaklık
+şarj aleti
+kılıf
+ekran koruyucu
+akıllı saat
+tablet
+router
+modem
+ev interneti
+ev wifi cihazı
+sabit internet
+ADSL
+fiber internet
+superbox
+4.5G modem
+LTE modem
+
+# === KURUMSAL HİZMETLER ===
+kurumsal hat
+kurumsal başvuru
+kurumsal sözleşme
+kurumsal tarife
+kurumsal paket
+kurumsal fatura
+kurumsal hesap
+kurumsal müşteri temsilcisi
+kurumsal destek hattı
+şirket hattı
+çalışan hattı
+grup hat fiyatı
+toplu hat başvurusu
+kurumsal VPN
+kurumsal roaming
+kurumsal internet paketi
+kurumsal SMS servisi
+kurumsal veri limiti
+kurumsal cihaz kiralama
+SLA anlaşması
+SLA koşulları
+hizmet seviyesi sözleşmesi
+kurumsal öncelikli destek
+şirket yetkili değişikliği
+şirket bilgileri güncelleme
+kurumsal fatura adresi
+kurumsal vergi numarası
+kurumsal e-fatura
+toplu ödeme
+kurumsal taahhüt
+şirket hesabı kapatma
+
+# === ÖDEME VE FATURA - OPERATÖR ÖZEL ===
+telefon faturası
+aylık fatura tutarı
+fatura kesim günü
+fatura ödeme tarihi
+fatura son ödeme tarihi
+fatura ödendi mi
+otomatik ödeme kurma
+otomatik ödeme bankası
+otomatik ödeme iptal
+fatura ödeme kanalları
+online fatura ödeme
+ATM ile fatura ödeme
+kiosk ödeme
+şubede ödeme
+fatura geciktirme
+gecikme zammı
+fatura itiraz süreci
+itiraz sonucu bekliyorum
+fatura bölme
+fatura inceleme
+fatura dönemleri
+Ocak faturası
+önceki ay fatura
+kullanım ayrıntısı
+arama ayrıntısı
+SMS ayrıntısı
+internet kullanım ayrıntısı
+detaylı fatura
+fatura analizi
+fatura indirme
+fatura PDF
+e-posta ile fatura almak istiyorum
+kağıt fatura iptal
+
+# === TEKNİK - ŞEBEKE VE ALTYAPI ===
+şebeke bakımı
+şebeke kesintisi
+planlı bakım çalışması
+bakım çalışması nedeniyle kesinti
+bakım ne zaman biter
+arıza bildirimi yapıyorum
+bölgede arıza var mı
+bölgesel kesinti
+şebeke yoğunluğu
+hat yoğunluğu
+sinyal yönlendirme
+baz istasyonu sorunu
+baz istasyonu yeri
+yeni baz istasyonu
+internet altyapı çalışması
+fiber altyapı
+altyapı geliştirme
+kapsama genişletme
+kapsama iyileştirme talebi
+şebeke performans sorunu
+geceleri internet yavaş
+gündüz internet yavaş
+hafta sonu sinyal sorunu
+
+# === TÜKETİCİ HAKLARI VE MEVZUAT ===
+tüketici hakları
+tüketici hakkı kullanmak istiyorum
+cayma hakkı
+14 günlük cayma hakkı
+abonelikten çekilme hakkı
+sözleşme bilgileri
+sözleşme kopyası
+sözleşme iptal
+sözleşme koşulları değişti mi
+önceden bilgilendirme hakkı
+zorunlu bilgi formu
+mesafeli sözleşme
+sözleşme mail ile gönderilsin
+hizmet kalitesi taahhüdü
+taahhüt ihlali
+SLA ihlali
+hizmet kesintisi tazminatı
+bireysel şikayete başvuru
+BTK şikayeti
+Tüketici Hakem Heyeti
+Tüketici Mahkemesi
+e-devlet şikayeti
+kayıt yaptırma talebi
+belgelere itiraz
+aleyhime işlem yapılıyor
+haksız ücret kesintisi
+yıllık fiyat artışı bildirimi
+tarifem değişti mi
+bilgim olmadan paket değişti
+onayım olmadan ücret kesildi
+KVKK kapsamında bilgi talebi
+kişisel verim nasıl kullanılıyor
+veri işleme rızam var mıydı
+rıza geri alıyorum
+iletişim izni geri çekme
+ticari elektronik ileti reddi
+spam mesaj şikayeti
+istenmeyen arama şikayeti
+
+# === SADAKAT VE ÖZEL AYRICALIKLAR ===
+sadakat puanı
+sadakat programı avantajları
+sadakat hediyesi
+yıl dönümü teklifi
+özel müşteri avantajı
+uzun süreli müşteri indirimi
+premium müşteri
+VIP müşteri hizmetleri
+öncelikli çağrı
+yönlendirilmiş destek
+kişisel müşteri temsilcisi
+müşteri temsilcim kimdir
+süper müşteri
+altın müşteri
+sadakat puanı sorgulama
+sadakat puanı harcama
+sadakat puanı ne zaman düşer
+sadakat puan süresi
+online sadakat mağazası
+ödül kataloğu
+ücretsiz ek paket
+bedava internet kazandım
+bedava dakika kazandım
+doğum günü hediyesi
+yıldönümü kampanyası
+özel indirim teklifi
+
+# === ÇAĞRI MERKEZİ VE İLETİŞİM KANALLARI ===
+çağrı merkezi
+çağrı merkezi bağlanamıyorum
+çağrı merkezi meşgul
+çağrı merkezi bekleme süresi
+sizi arama talebim var
+beni arayın
+geri arama talebi
+geri arama saati
+hangi numaradan aranacağım
+çağrı merkezi kaç saat açık
+7/24 destek
+gece destek var mı
+hafta sonu destek var mı
+bayram günü destek
+İngilizce destek var mı
+sesli yanıt sistemi
+tuşlu menü
+canlı temsilciye bağlan
+beklemeden bağlan
+sesli asistan
+dijital asistan
+chat destek
+WhatsApp üzerinden yardım
+web sitesi üzerinden yardım
+mobil uygulama üzerinden yardım
+self servis
+online işlemler
+IVR bypass
+temsilci talebi
+üst yönetim talebi
+süpervizör talebi
+şef talebi
+ekip müdürü
+müşteri deneyimi birimi
+kalite kontrol birimi
+müşteri memnuniyet anketi
+NPS anketi
+geri bildirim paylaşmak istiyorum
+deneyimimi anlatmak istiyorum
+memnuniyet değerlendirmesi
+
+# === KAMPANYA ÖZEL - OPERATÖR ===
+cihaz hediyeli tarife
+tablet hediyeli kampanya
+kulaklık hediyeli kampanya
+öğrenci tarifesi
+öğrenci indirimi
+öğrenci belgesi ile indirim
+emekli tarifesi
+emekli indirimi
+engelli müşteri indirimi
+engelli abonelik indirimi
+sevgililer günü kampanyası
+anneler günü kampanyası
+babalar günü kampanyası
+okul dönemi kampanyası
+yaz kampanyası
+bayram kampanyası
+yıl sonu kampanyası
+iki al bir öde
+biri ücretsiz
+çift paket fırsatı
+fatura indirimi kuponu
+indirimli geçiş tarifesi
+cazip geçiş teklifi
+online'dan al indirim kazan
+uygulamadan satın al fırsatı
