@@ -1256,3 +1256,559 @@ veri aktarımı
 hesabımdan verilerimi indirmek istiyorum
 verilerimi görmek istiyorum
 birinin verilerini bildirmek istiyorum
+
+# ================================================================
+# TELEKOMÜNIKASYON OPERATÖRÜ - GENİŞLETİLMİŞ SÖZLÜK
+# Çağrı merkezi, hat yönetimi, tarife, cihaz, teknik
+# ================================================================
+
+# === HAT VE SİM KART ===
+hat numarası
+hat numaramı öğrenmek istiyorum
+hat sahibi bilgileri
+hat sahibi kim
+hat sahipliği değişikliği
+hat devir işlemi
+hat devri nasıl yapılır
+hat devri için belgeler
+hat birleştirme
+hat transferi
+hat aktarma
+hat limiti nedir
+hat başvurusu
+hat başvurusu nasıl yapılır
+hat aktivasyonu
+hat aktivasyon süresi
+hat aktivasyonu neden tamamlanmadı
+hat askıya alındı
+hat kilitli
+hat kapandı
+hat neden kapandı
+hat yeniden açma
+hat yeniden açılabilir mi
+hat sonlandırma
+hat sonlandırma talebi
+hat sonlandırma ücreti
+hat sonlandırma koşulları
+SIM kart
+SIM kart değişimi
+SIM kart takma
+SIM kart okutulmuyor
+SIM kart tanınmıyor
+yeni SIM kart
+SIM kart şifresi
+SIM kart şifresi yanlış
+SIM kart kilitlendi
+SIM kart kaydı
+SIM kart aktivasyonu
+eSIM
+eSIM aktivasyonu
+eSIM tanımlama
+eSIM nasıl yüklenir
+eSIM destekli cihaz
+SIM kart kayıp veya çalıntı
+çalınan hat bloke etme
+kayıp SIM bloke
+SIM yenileme ücreti
+dijital SIM
+fiziksel SIM kart
+
+# === TARİFE VE PAKETLER ===
+tarife bilgisi
+mevcut tarifem
+mevcut paketim
+tarife değiştirmek istiyorum
+en uygun tarife hangisi
+tarife karşılaştırma
+tarife fiyatları
+tarife içeriği
+tarife yükseltme
+tarife düşürme
+tarife taahhütlü mü
+taahhütsüz tarife
+taahhütlü tarife
+taahhüt süresi
+taahhüt bitiş tarihi
+taahhüt erken çıkış bedeli
+taahhüt tazminatı
+taahhütten çıkmak istiyorum
+bireysel tarife
+kurumsal tarife
+aile paketi
+aile paketi üyesi ekleme
+aile paketi üyesi çıkarma
+çoklu hat paketi
+ikinci hat indirimi
+ana hat
+ikinci hat
+ek hat açma
+ek hat ücreti
+sınırsız konuşma paketi
+sınırsız SMS paketi
+sınırsız internet paketi
+hibrit tarife
+hazır kart
+hazır kart başvurusu
+hazır kart aktivasyonu
+hazır kart bakiye sorgulama
+hazır kart yükleme
+hazır kart geçiş tarifleri
+kontörlü hat
+kontör yükleme
+kontör ne kadar kaldı
+konuşma paketi
+dakika paketi nedir
+paket bitince ne olur
+paket bitince ücretlendirme
+paket yenileme
+paket yenileme tarihi
+paket yenileme ücretim
+paket kullanım raporu
+paket kullanım bilgisi
+paket kullanımını sorgulama
+paket ekle
+ek paket satın alma
+ek veri paketi
+geçerli paketlerim
+aktif paketler
+ek SMS paketi
+yurt içi arama tanımı
+gece tarifesi
+hafta sonu tarifesi
+sosyal medya paketi
+WhatsApp paketi
+YouTube paketi
+streaming paketi
+müzik paketi
+
+# === İNTERNET VE VERİ ===
+internet hızı
+internet hızı düştü
+internet hızım çok yavaş
+internet bağlantısı kopuyor
+mobil internet çalışmıyor
+4G çalışmıyor
+5G çalışmıyor
+4G aktif değil
+5G aktif değil
+4G sinyali yok
+5G sinyali yok
+APN ayarları
+APN ayarları nasıl yapılır
+veri kotam doldu
+internet kotam bitti
+kota bilgisi
+kota kaç GB
+kota aşımı ücreti
+kota yenileme tarihi
+kota kullanım detayı
+kota takip nasıl yapılır
+veri tasarruf modu
+veri kullanım raporu
+internet hız testi
+indirme hızı
+yükleme hızı
+ping değeri
+internet altyapısı
+internet çekim alanı sorunu
+çekim alanında sorun
+sinyal zayıf
+sinyal yok
+bölgemde sinyal var mı
+kapsama alanı kontrolü
+kapsama alanı dışında
+dağlık alanda kapsama
+köyde sinyal var mı
+bina içinde sinyal yok
+binada kapsama sorunu
+ev içi kapsama iyileştirme
+Wi-Fi araması
+Wi-Fi araması aktif mi
+Wi-Fi araması nasıl açılır
+hotspot paylaşımı
+internet paylaşımı
+mobil hotspot
+tethering
+internet paylaşım limiti
+internet önceliği
+ikinci hatta internet
+GPRS ayarları
+H+ nedir
+LTE nedir
+5G nedir
+5G hızı nedir
+5G bölgem var mı
+
+# === ARAMA VE SMS ===
+arama sorunu
+arama düşüyor
+arama bağlanmıyor
+sesli posta
+sesli posta mesajı
+sesli posta şifresi
+sesli posta nasıl açılır
+sesli posta kapatma
+gelen çağrı engelleme
+giden çağrı engelleme
+çağrı yönlendirme
+çağrı yönlendirme nasıl açılır
+çağrı yönlendirme iptal
+çağrı bekletme
+çağrı bekletme açma
+çağrı bekletme kapatma
+üç yönlü görüşme
+konferans araması
+numara gizleme
+arayan kimseyi göster
+arayan kimlik engelleme
+arama geçmişi
+SMS sorunu
+SMS gönderilmiyor
+SMS alınamıyor
+SMS bildirim sorunu
+toplu SMS
+uluslararası SMS
+uluslararası arama
+uluslararası arama açma
+yurt dışı araması engelleme
+
+# === ROAMING VE YURT DIŞI ===
+roaming
+roaming aktif
+roaming açma
+roaming kapatma
+roaming ücreti
+roaming ücretlendirme
+yurt dışı paketi
+yurt dışı internet paketi
+yurt dışı arama paketi
+yurt dışı SMS paketi
+AB roaming
+Avrupa roaming
+AB'de serbest dolaşım
+yurt dışında çekim
+yurt dışında internet çalışmıyor
+yurt dışında meşgul sinyali
+yurt dışında sinyal yok
+yurt dışında fatura ne kadar olur
+roaming fatura şoku
+roaming limiti
+roaming limiti ayarlama
+roaming bildirim
+roaming bildirimleri
+ülke bazlı roaming paketi
+dünya paketi
+tatil paketi
+gezi paketi
+uluslararası hat
+uluslararası numara çevirme
+alan kodu bilgisi
+hangi ülkelerde kapsama var
+Avrupa'da hangi ücretler geçerli
+
+# === NUMARA TAŞIMA ===
+numara taşıma
+numara taşıma talebi
+numara taşıma nasıl yapılır
+numara taşıma ne kadar sürer
+numara taşıma süreci
+numara taşıma için başvuru
+numara taşıma şartları
+numara taşıma ücretli mi
+numara taşıma ücretsiz mi
+numara taşıma belgesi
+numara taşıma formu
+numara taşıma taahhüdü
+taşıma sonrası işlemler
+eski operatörden ayrılma
+taşıma iptal
+taşıma takibi
+taşıma kodu
+taşıma kodu nasıl alınır
+taşıma kodu nerede geçerli
+PVK kodu
+PVK kodu nedir
+elektronik numara taşıma
+taşıma onaylama
+taşıma tarih değişikliği
+taşıma randevusu
+taşıma iptal talebi
+
+# === CİHAZ VE AKSESUAR ===
+cihaz satın alma
+cihaz fiyatı
+taksitli cihaz
+cihaz taksit seçenekleri
+cihaz kampanyası
+cihaz modeli
+cihaz stoku
+cihaz stokta var mı
+cihaz beğendim satın almak istiyorum
+cihaz teslimatı
+cihaz teslimat süresi
+cihaz garantisi
+cihaz garanti süresi
+cihaz arızası
+cihaz servis talebi
+cihaz teknik sorun
+cihaz yazılım güncelleme
+cihaz firmware güncelleme
+cihaz değişimi
+cihaz iade
+cihaz faturası
+kapsamlı cihaz sigortası
+cihaz sigortası
+cihaz çalındı
+cihaz kayboldu
+cihazı engelleme
+IMEI numarası
+IMEI sorgulama
+IMEI engelleme
+IMEI engeli kaldırma
+aksesuar satın alma
+kulaklık
+şarj aleti
+kılıf
+ekran koruyucu
+akıllı saat
+tablet
+router
+modem
+ev interneti
+ev wifi cihazı
+sabit internet
+ADSL
+fiber internet
+superbox
+4.5G modem
+LTE modem
+
+# === KURUMSAL HİZMETLER ===
+kurumsal hat
+kurumsal başvuru
+kurumsal sözleşme
+kurumsal tarife
+kurumsal paket
+kurumsal fatura
+kurumsal hesap
+kurumsal müşteri temsilcisi
+kurumsal destek hattı
+şirket hattı
+çalışan hattı
+grup hat fiyatı
+toplu hat başvurusu
+kurumsal VPN
+kurumsal roaming
+kurumsal internet paketi
+kurumsal SMS servisi
+kurumsal veri limiti
+kurumsal cihaz kiralama
+SLA anlaşması
+SLA koşulları
+hizmet seviyesi sözleşmesi
+kurumsal öncelikli destek
+şirket yetkili değişikliği
+şirket bilgileri güncelleme
+kurumsal fatura adresi
+kurumsal vergi numarası
+kurumsal e-fatura
+toplu ödeme
+kurumsal taahhüt
+şirket hesabı kapatma
+
+# === ÖDEME VE FATURA - OPERATÖR ÖZEL ===
+telefon faturası
+aylık fatura tutarı
+fatura kesim günü
+fatura ödeme tarihi
+fatura son ödeme tarihi
+fatura ödendi mi
+otomatik ödeme kurma
+otomatik ödeme bankası
+otomatik ödeme iptal
+fatura ödeme kanalları
+online fatura ödeme
+ATM ile fatura ödeme
+kiosk ödeme
+şubede ödeme
+fatura geciktirme
+gecikme zammı
+fatura itiraz süreci
+itiraz sonucu bekliyorum
+fatura bölme
+fatura inceleme
+fatura dönemleri
+Ocak faturası
+önceki ay fatura
+kullanım ayrıntısı
+arama ayrıntısı
+SMS ayrıntısı
+internet kullanım ayrıntısı
+detaylı fatura
+fatura analizi
+fatura indirme
+fatura PDF
+e-posta ile fatura almak istiyorum
+kağıt fatura iptal
+
+# === TEKNİK - ŞEBEKE VE ALTYAPI ===
+şebeke bakımı
+şebeke kesintisi
+planlı bakım çalışması
+bakım çalışması nedeniyle kesinti
+bakım ne zaman biter
+arıza bildirimi yapıyorum
+bölgede arıza var mı
+bölgesel kesinti
+şebeke yoğunluğu
+hat yoğunluğu
+sinyal yönlendirme
+baz istasyonu sorunu
+baz istasyonu yeri
+yeni baz istasyonu
+internet altyapı çalışması
+fiber altyapı
+altyapı geliştirme
+kapsama genişletme
+kapsama iyileştirme talebi
+şebeke performans sorunu
+geceleri internet yavaş
+gündüz internet yavaş
+hafta sonu sinyal sorunu
+
+# === TÜKETİCİ HAKLARI VE MEVZUAT ===
+tüketici hakları
+tüketici hakkı kullanmak istiyorum
+cayma hakkı
+14 günlük cayma hakkı
+abonelikten çekilme hakkı
+sözleşme bilgileri
+sözleşme kopyası
+sözleşme iptal
+sözleşme koşulları değişti mi
+önceden bilgilendirme hakkı
+zorunlu bilgi formu
+mesafeli sözleşme
+sözleşme mail ile gönderilsin
+hizmet kalitesi taahhüdü
+taahhüt ihlali
+SLA ihlali
+hizmet kesintisi tazminatı
+bireysel şikayete başvuru
+BTK şikayeti
+Tüketici Hakem Heyeti
+Tüketici Mahkemesi
+e-devlet şikayeti
+kayıt yaptırma talebi
+belgelere itiraz
+aleyhime işlem yapılıyor
+haksız ücret kesintisi
+yıllık fiyat artışı bildirimi
+tarifem değişti mi
+bilgim olmadan paket değişti
+onayım olmadan ücret kesildi
+KVKK kapsamında bilgi talebi
+kişisel verim nasıl kullanılıyor
+veri işleme rızam var mıydı
+rıza geri alıyorum
+iletişim izni geri çekme
+ticari elektronik ileti reddi
+spam mesaj şikayeti
+istenmeyen arama şikayeti
+
+# === SADAKAT VE ÖZEL AYRICALIKLAR ===
+sadakat puanı
+sadakat programı avantajları
+sadakat hediyesi
+yıl dönümü teklifi
+özel müşteri avantajı
+uzun süreli müşteri indirimi
+premium müşteri
+VIP müşteri hizmetleri
+öncelikli çağrı
+yönlendirilmiş destek
+kişisel müşteri temsilcisi
+müşteri temsilcim kimdir
+süper müşteri
+altın müşteri
+sadakat puanı sorgulama
+sadakat puanı harcama
+sadakat puanı ne zaman düşer
+sadakat puan süresi
+online sadakat mağazası
+ödül kataloğu
+ücretsiz ek paket
+bedava internet kazandım
+bedava dakika kazandım
+doğum günü hediyesi
+yıldönümü kampanyası
+özel indirim teklifi
+
+# === ÇAĞRI MERKEZİ VE İLETİŞİM KANALLARI ===
+çağrı merkezi
+çağrı merkezi bağlanamıyorum
+çağrı merkezi meşgul
+çağrı merkezi bekleme süresi
+sizi arama talebim var
+beni arayın
+geri arama talebi
+geri arama saati
+hangi numaradan aranacağım
+çağrı merkezi kaç saat açık
+7/24 destek
+gece destek var mı
+hafta sonu destek var mı
+bayram günü destek
+İngilizce destek var mı
+sesli yanıt sistemi
+tuşlu menü
+canlı temsilciye bağlan
+beklemeden bağlan
+sesli asistan
+dijital asistan
+chat destek
+WhatsApp üzerinden yardım
+web sitesi üzerinden yardım
+mobil uygulama üzerinden yardım
+self servis
+online işlemler
+IVR bypass
+temsilci talebi
+üst yönetim talebi
+süpervizör talebi
+şef talebi
+ekip müdürü
+müşteri deneyimi birimi
+kalite kontrol birimi
+müşteri memnuniyet anketi
+NPS anketi
+geri bildirim paylaşmak istiyorum
+deneyimimi anlatmak istiyorum
+memnuniyet değerlendirmesi
+
+# === KAMPANYA ÖZEL - OPERATÖR ===
+cihaz hediyeli tarife
+tablet hediyeli kampanya
+kulaklık hediyeli kampanya
+öğrenci tarifesi
+öğrenci indirimi
+öğrenci belgesi ile indirim
+emekli tarifesi
+emekli indirimi
+engelli müşteri indirimi
+engelli abonelik indirimi
+sevgililer günü kampanyası
+anneler günü kampanyası
+babalar günü kampanyası
+okul dönemi kampanyası
+yaz kampanyası
+bayram kampanyası
+yıl sonu kampanyası
+iki al bir öde
+biri ücretsiz
+çift paket fırsatı
+fatura indirimi kuponu
+indirimli geçiş tarifesi
+cazip geçiş teklifi
+online'dan al indirim kazan
+uygulamadan satın al fırsatı

@@ -162,35 +162,48 @@ class TransformerPredictor:
     
     def _fallback_predictions(self, text: str, max_suggestions: int) -> List[Suggestion]:
         """
-        Dinamik on-ek eslestirmesi (Dynamic Prefix Matching).
-        500+ musterim hizmetleri kelime/ifadesi arasinda arama yapar.
+        3 katmanli akilli eslestirme motoru:
+          1. Son kelime -> ifadenin ILK kelimesinin basiyla esles (yuksek skor)
+          2. Son 2 kelime -> tam ifadenin basiyla esles       (en yuksek skor)
+          3. Son kelime -> ifade icindeki HERHANGI bir kelimede ara (substring)
+        Bu sayede cumlenin ortasindaki bir kelimeyi yazinca da oneri gelir.
         """
         suggestions_set = []
         seen = set()
+        text_lower = text.lower().strip()
+        words = text_lower.split()
+        last_word = words[-1] if words else text_lower
 
-        words = text.split()
-        last_word = words[-1].lower() if words else text.lower()
-
-        # --- 1. Son kelime ile on-ek eslestirmesi (Ana mantik) ---
-        if last_word and len(last_word) >= 2:
+        # KATMAN 1: Son kelime -> ifadenin ilk kelimesinin basi
+        if len(last_word) >= 2:
             for entry in CUSTOMER_SERVICE_WORDS:
                 entry_lower = entry.lower()
-                first_word = entry_lower.split()[0]
-                # Son kelime, ifadenin basiyla eslesiyorsa ekle
-                if first_word.startswith(last_word) and entry not in seen:
+                first_word_of_entry = entry_lower.split()[0]
+                if first_word_of_entry.startswith(last_word) and entry not in seen:
                     seen.add(entry)
-                    suggestions_set.append((entry, 9.0 + len(last_word) * 0.1))
+                    score = 9.0 + min(len(last_word) * 0.15, 0.9)
+                    suggestions_set.append((entry, score))
 
-        # --- 2. Tam metin ile surekli eslestirme (son 2 kelime) ---
+        # KATMAN 2: Son 2 kelime -> tam ifade basi
         if len(words) >= 2:
-            prefix_phrase = " ".join(words[-2:]).lower()
+            phrase_prefix = " ".join(words[-2:])
             for entry in CUSTOMER_SERVICE_WORDS:
-                if entry.lower().startswith(prefix_phrase) and entry not in seen:
+                if entry.lower().startswith(phrase_prefix) and entry not in seen:
                     seen.add(entry)
-                    suggestions_set.append((entry, 9.8))  # Yuksek skor: daha spesifik
+                    suggestions_set.append((entry, 9.95))
 
-        # Skora gore sirala
-        suggestions_set.sort(key=lambda x: x[1], reverse=True)
+        # KATMAN 3: Son kelime -> ifade icindeki herhangi bir kelimenin basi
+        if len(last_word) >= 3:
+            for entry in CUSTOMER_SERVICE_WORDS:
+                if entry in seen:
+                    continue
+                entry_words = entry.lower().split()
+                if any(w.startswith(last_word) for w in entry_words):
+                    seen.add(entry)
+                    suggestions_set.append((entry, 8.5))
+
+        # Skora gore sirala, esit skorlarda alfabe sirasi
+        suggestions_set.sort(key=lambda x: (-x[1], x[0]))
 
         return [
             Suggestion(
