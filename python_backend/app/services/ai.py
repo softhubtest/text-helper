@@ -1,8 +1,34 @@
 import os
-from typing import List
+from typing import List, Optional
 from app.models.schemas import Suggestion
 from app.core.config import settings
 from app.core.logs import logger
+
+# ============================================================
+# Musteri Hizmetleri Kelime Listesi Yukleyici
+# ============================================================
+
+def _load_customer_service_words() -> List[str]:
+    """customer_service_words.txt dosyasini yukle"""
+    words = []
+    try:
+        data_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
+        word_file = os.path.join(data_dir, "customer_service_words.txt")
+        if os.path.exists(word_file):
+            with open(word_file, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if line and not line.startswith("#"):
+                        words.append(line)
+            logger.info(f"Musteri hizmetleri kelime listesi yuklendi: {len(words)} girdi")
+        else:
+            logger.warning(f"Kelime listesi bulunamadi: {word_file}")
+    except Exception as e:
+        logger.error(f"Kelime listesi yuklenemedi: {e}")
+    return words
+
+# Uygulama baslangicinda bir kez yukle
+CUSTOMER_SERVICE_WORDS: List[str] = _load_customer_service_words()
 
 # Global import for optional dependencies
 try:
@@ -135,149 +161,46 @@ class TransformerPredictor:
             return self._fallback_predictions(text, max_suggestions)
     
     def _fallback_predictions(self, text: str, max_suggestions: int) -> List[Suggestion]:
-        """Fallback: Kapsamli Turkce kelime onerileri (Model olmadan yuksek kalite)"""
-        suggestions = []
+        """
+        Dinamik on-ek eslestirmesi (Dynamic Prefix Matching).
+        500+ musterim hizmetleri kelime/ifadesi arasinda arama yapar.
+        """
+        suggestions_set = []
+        seen = set()
+
         words = text.split()
         last_word = words[-1].lower() if words else text.lower()
-        
-        # Kapsamli Turkce musteri hizmetleri pattern'leri
-        patterns = {
-            # A
-            'aca': ['acaba', 'acaba nasıl', 'acaba ne zaman'],
-            'aç': ['açık', 'açıklama', 'açıklamak istiyorum', 'açıkça belirtmek isterim'],
-            'aci': ['acil', 'acil yardım', 'acil durum', 'acil olarak'],
-            'ale': ['alerji', 'alerjik', 'alerji durumunda'],
-            'ali': ['alındı', 'alındı bildirimi', 'alınmadı'],
-            'alt': ['alternatif', 'alternatif çözüm', 'alternatif ürün'],
-            'ana': ['anlaşılması', 'anladım', 'anlamıyorum', 'anlatabilir misiniz'],
-            'ara': ['arama', 'arayabilirsiniz', 'aramak istiyorum', 'aranacak'],
-            'asıl': ['asıl sorun', 'asıl mesele', 'asıl konu'],
-            'ası': ['asıl mesele', 'asistan', 'asistanınız'],
 
-            # B
-            'bağ': ['bağlantı', 'bağlantı sorunu', 'bağlantı hatası', 'bağlantı kurulamıyor'],
-            'bak': ['bakım', 'bakım hizmeti', 'bakmak istiyorum'],
-            'bay': ['bayiler', 'bayiiniz', 'bayi noktaları'],
-            'bek': ['bekliyorum', 'bekleme süresi', 'beklemek istemiyorum'],
-            'bil': ['bilgi', 'bilgi almak istiyorum', 'bilgilendirme', 'bilmiyorum'],
-            'bir': ['birkaç gün', 'birkaç saat', 'birkaç dakika', 'bir sorun yaşadım'],
-            'böy': ['böyle bir durum', 'böyle olmamalı', 'böyle devam edemez'],
-            'bun': ['bundan sonra', 'bunun için', 'bununla ilgili', 'bunun çözümü'],
+        # --- 1. Son kelime ile on-ek eslestirmesi (Ana mantik) ---
+        if last_word and len(last_word) >= 2:
+            for entry in CUSTOMER_SERVICE_WORDS:
+                entry_lower = entry.lower()
+                first_word = entry_lower.split()[0]
+                # Son kelime, ifadenin basiyla eslesiyorsa ekle
+                if first_word.startswith(last_word) and entry not in seen:
+                    seen.add(entry)
+                    suggestions_set.append((entry, 9.0 + len(last_word) * 0.1))
 
-            # C-Ç
-            'can': ['canlı destek', 'canlı yardım', 'canlı görüşme'],
-            'çal': ['çalışmıyor', 'çalışmıyor sistemde', 'çalışmayan ürün'],
-            'çöz': ['çözüm', 'çözüm öneriniz', 'çözüm bekliyorum', 'çözülmedi'],
+        # --- 2. Tam metin ile surekli eslestirme (son 2 kelime) ---
+        if len(words) >= 2:
+            prefix_phrase = " ".join(words[-2:]).lower()
+            for entry in CUSTOMER_SERVICE_WORDS:
+                if entry.lower().startswith(prefix_phrase) and entry not in seen:
+                    seen.add(entry)
+                    suggestions_set.append((entry, 9.8))  # Yuksek skor: daha spesifik
 
-            # D
-            'dan': ['danışmak istiyorum', 'danışma hattı'],
-            'dep': ['depozito', 'depo', 'depolama'],
-            'des': ['destek', 'destek almak istiyorum', 'destek hattı', 'destek ekibi'],
-            'det': ['detaylı bilgi', 'detayları öğrenmek istiyorum'],
-            'diy': ['diyorum ki', 'diyelim ki'],
-            'dur': ['durum', 'durum sorgulama', 'durumum nedir'],
+        # Skora gore sirala
+        suggestions_set.sort(key=lambda x: x[1], reverse=True)
 
-            # E
-            'eks': ['eksik', 'eksik ürün', 'eksik parça', 'eksiklik var'],
-            'ele': ['elektronik fatura', 'elektronik bildirim'],
-            'ert': ['ertelendi', 'erteleme istiyorum'],
-            'eso': ['esorgu', 'eş zamanlı'],
-
-            # F
-            'fat': ['fatura', 'fatura sorunu', 'fatura itirazı', 'fatura iptali'],
-            'fiy': ['fiyat', 'fiyat bilgisi', 'fiyat listesi', 'fiyat farkı'],
-
-            # G
-            'gar': ['garanti', 'garanti kapsamı', 'garanti süresi', 'garanti belgesi'],
-            'gec': ['gecikmeli', 'gecikme', 'gecikme nedeni', 'gecikme sorunu'],
-            'gel': ['gelecek', 'gelecek mi', 'geliş tarihi', 'gelebilir misiniz'],
-            'ger': ['gereken', 'gerekli belgeler', 'gereksinim', 'geri ödeme'],
-            'gönd': ['gönderim', 'gönderildi', 'gönderim tarihi', 'gönderim takibi'],
-            'gör': ['görüşmek istiyorum', 'görüşme talebi', 'görüştüm'],
-            'güz': ['güzel', 'güzellik', 'güzel hizmet aldım'],
-
-            # H
-            'has': ['hasarlı', 'hasar', 'hasar tespiti', 'hasar bildirimi'],
-            'hes': ['hesap', 'hesap bilgileri', 'hesabım kapalı', 'hesap açma'],
-            'hız': ['hızlı', 'hızlı çözüm', 'hızlı dönüş'],
-            'hiz': ['hizmet', 'hizmet kalitesi', 'hizmet bedeli', 'hizmet talebi'],
-
-            # İ
-            'iade': ['iade', 'iade talebi', 'iade ettim', 'iade süreci', 'iade edilmedi'],
-            'ipa': ['iptal', 'iptal talebi', 'iptal ettim', 'iptal süreci'],
-            'ist': ['istiyorum', 'istek', 'isteğim var', 'isteğimi iletmek istiyorum'],
-            'iyi': ['iyiyim teşekkürler', 'iyi günler', 'iyi akşamlar'],
-
-            # K
-            'kal': ['kaldırma', 'kalite', 'kalite sorunu', 'kalitesiz ürün'],
-            'kar': ['kargo', 'kargo takibi', 'kargo hasarı', 'kargo kayıp'],
-            'kat': ['katılım', 'katılmak istiyorum'],
-            'kay': ['kayıp', 'kayıt', 'kayıt numarası', 'kayıt olmak istiyorum'],
-            'kod': ['kod', 'kod numarası', 'promosyon kodu'],
-            'kon': ['konu', 'konuşmak istiyorum', 'konuyla ilgili'],
-            'kul': ['kullanıcı', 'kullanım kılavuzu', 'kullanım sorunu', 'kullanıcı adı'],
-
-            # M
-            'man': ['mantık', 'mantıklı değil', 'manzara'],
-            'mer': ['merhaba', 'merhaba, nasıl yardımcı olabilirim', 'merhaba, teşekkürler'],
-            'müş': ['müşteri', 'müşteri hizmetleri', 'müşteri desteği', 'müşteri memnuniyeti', 'müşteri numarası'],
-
-            # N
-            'nas': ['nasıl', 'nasıl yardımcı olabilirim', 'nasıl bir sorun var'],
-            'nere': ['nerede', 'nereye başvurabilirim', 'nereden alabilirim'],
-            'num': ['numara', 'numaram nedir', 'numara değişikliği'],
-
-            # O
-            'ode': ['ödeme', 'ödeme yaptım', 'ödeme sorunu', 'ödeme onayı', 'ödeme iadesi'],
-            'ola': ['olabilir mi', 'olası', 'olabildiğince hızlı'],
-            'onay': ['onay', 'onaylandı mı', 'onay bekliyorum'],
-
-            # P
-            'par': ['parça', 'para iadesi', 'parça değişimi'],
-            'pas': ['pasif', 'pasif hesap', 'pasoligim'],
-            'pro': ['promosyon', 'promo kodu', 'problem'],
-
-            # S
-            'sağ': ['sağ olun', 'sağlık', 'sağ olun teşekkürler'],
-            'ser': ['servis', 'servis talebi', 'servis noktası'],
-            'sip': ['sipariş', 'siparişim', 'sipariş takibi', 'sipariş iptal', 'sipariş onayı'],
-            'sor': ['sorun', 'sorunum var', 'sorunum çözülmedi', 'sorunu bildirmek istiyorum'],
-            'şik': ['şikayet', 'şikayet etmek istiyorum', 'şikayetim var'],
-
-            # T
-            'tak': ['takip', 'takip numarası', 'takibini yapabilir miyim'],
-            'tal': ['talep', 'talep açmak istiyorum', 'talebim var'],
-            'tar': ['tarih', 'tarih değişikliği', 'tarifeler'],
-            'tek': ['teknik destek', 'teknik sorun', 'tekrar', 'tekrar deniyorum'],
-            'tel': ['telefon', 'telefon numarası', 'telefonda görüşebilir miyim'],
-            'tes': ['teslimat', 'teslimat süresi', 'teslim alındı', 'teslim edilmedi'],
-            'teş': ['teşekkür', 'teşekkürler', 'teşekkür ederim', 'teşekkür ederiz', 'teşekkürler iyi günler'],
-
-            # U-Ü
-            'ücr': ['ücretsiz', 'ücret iadesi', 'ücret bilgisi'],
-            'ürü': ['ürün', 'ürün iadesi', 'ürün değişimi', 'ürün hasarlı', 'ürün bilgisi'],
-
-            # Y
-            'yar': ['yardım', 'yardımcı', 'yardımcı olabilir misiniz', 'yardım almak istiyorum'],
-            'yer': ['yerine', 'yerinde inceleme', 'yetkili servis'],
-            'yönet': ['yönetici', 'yöneticiye bağlar mısınız'],
-            'yük': ['yükleme', 'yükleme sorunu'],
-
-            # Z
-            'zan': ['zannediyorum', 'zannetmiyorum'],
-        }
-        
-        prefix = last_word[:3] if len(last_word) >= 3 else last_word
-        if prefix in patterns:
-            for word in patterns[prefix][:max_suggestions]:
-                suggestions.append(Suggestion(
-                    text=word,
-                    type="ai_prediction",
-                    score=9.0,
-                    description="AI tahmini (Pattern)",
-                    source="transformer"
-                ))
-        
-        return suggestions
+        return [
+            Suggestion(
+                text=text_val,
+                type="ai_prediction",
+                score=round(score, 1),
+                description="Musteri Hizmetleri Onerileri",
+                source="dictionary"
+            )
+            for text_val, score in suggestions_set[:max_suggestions]
+        ]
 
 transformer_predictor = TransformerPredictor()
