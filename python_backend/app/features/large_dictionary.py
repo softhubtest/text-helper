@@ -7,6 +7,24 @@ import os
 import re
 from typing import List, Dict
 
+# --- common-word helper (optional dependency, try multiple import paths) ---
+_common_available = False
+
+def is_common(word: str) -> bool:  # default stub
+    return False
+
+try:
+    from app.features.trie_index import is_common as _ic  # type: ignore
+    is_common = _ic  # type: ignore
+    _common_available = True
+except Exception:
+    try:
+        from features.trie_index import is_common as _ic2  # type: ignore
+        is_common = _ic2  # type: ignore
+        _common_available = True
+    except Exception:
+        pass  # is_common stays as stub above
+
 class LargeTurkishDictionary:
     """Büyük Türkçe sözlük yöneticisi"""
     

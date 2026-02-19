@@ -20,6 +20,12 @@ except ImportError:
     ES_MANAGER_AVAILABLE = False
     es_manager = None
 
+# Müşteri hizmetleri + telekomünikasyon kelime listesi
+try:
+    from app.services.ai import CUSTOMER_SERVICE_WORDS as _CS_WORDS
+except Exception:
+    _CS_WORDS = []
+
 class ElasticsearchPredictor:
     """Elasticsearch ile hızlı sözlük arama"""
     
@@ -173,10 +179,10 @@ class ElasticsearchPredictor:
     async def _local_search(self, prefix: str, max_results: int) -> List[Suggestion]:
         suggestions = []
         prefix_lower = prefix.lower().strip()
-        
+
         if not prefix_lower:
             return suggestions
-            
+
         if not self.local_dictionary and not self._dictionary_loaded:
              self.local_dictionary = self._load_dictionary()
         
@@ -192,6 +198,37 @@ class ElasticsearchPredictor:
                             description=f"Sözlük (frekans: {result.get('frequency', 0)})",
                             source="large_dictionary"
                         ))
+                    # --- Müşteri hizmetleri / telecom substring araması ---
+                    seen_cs = {s.text for s in suggestions}
+                    if len(prefix_lower) >= 2:
+                        for phrase in _CS_WORDS:
+                            if phrase in seen_cs:
+                                continue
+                            phrase_lower = phrase.lower()
+                            # Katman 1: ifade basi ile eslesme
+                            if phrase_lower.startswith(prefix_lower):
+                                suggestions.append(Suggestion(
+                                    text=phrase,
+                                    type="ai_prediction",
+                                    score=9.5,
+                                    description="Müşteri Hizmetleri",
+                                    source="customer_service"
+                                ))
+                                seen_cs.add(phrase)
+                    # Katman 2: herhangi bir kelimenin basi ile eslesme (3+ harf)
+                    if len(prefix_lower) >= 3:
+                        for phrase in _CS_WORDS:
+                            if phrase in seen_cs:
+                                continue
+                            if any(w.startswith(prefix_lower) for w in phrase.lower().split()):
+                                suggestions.append(Suggestion(
+                                    text=phrase,
+                                    type="ai_prediction",
+                                    score=8.8,
+                                    description="Müşteri Hizmetleri",
+                                    source="customer_service"
+                                ))
+                                seen_cs.add(phrase)
                     return suggestions
             except Exception as e:
                 logger.error(f"Large dictionary search hatası: {e}")

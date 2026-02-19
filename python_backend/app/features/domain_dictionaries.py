@@ -18,7 +18,7 @@ class DomainDictionaryManager:
             'customer_service': self._get_customer_service_dict(),
             'technical': self._get_technical_dict(),
             'ecommerce': self._get_ecommerce_dict(),
-            'general': []
+            'general': {}  # dict, not list — .items() is called on this
         }
     
     def _get_customer_service_dict(self) -> Dict[str, List[str]]:
